@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const sequelize = require('./config/db');
 const userRoutes = require('./controllers/user.ctrl');
 const galleryRoutes = require('./controllers/gallery.ctrl');
+const contactRoutes = require('./controllers/contact.ctrl');
 
 
 
@@ -15,6 +16,7 @@ app.use(cors());
 
 app.use('/api', userRoutes);
 app.use('/api/galleries', galleryRoutes);
+app.use('/api/contact', contactRoutes);
 
 const PORT = process.env.PORT || 4000;
 
