@@ -5,7 +5,7 @@ const sequelize = require('./config/db');
 const userRoutes = require('./controllers/user.ctrl');
 const galleryRoutes = require('./controllers/gallery.ctrl');
 const contactRoutes = require('./controllers/contact.ctrl');
-
+const serviceRoutes = require('./controllers/service.ctrl'); 
 
 
 const app = express();
@@ -16,7 +16,8 @@ app.use(cors());
 
 app.use('/api', userRoutes);
 app.use('/api/galleries', galleryRoutes);
-app.use('/api/contact', contactRoutes);
+app.use('/api/contacts', contactRoutes);
+app.use('/api/services', serviceRoutes); 
 
 const PORT = process.env.PORT || 4000;
 
