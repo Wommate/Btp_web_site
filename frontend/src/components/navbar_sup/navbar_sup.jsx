@@ -8,9 +8,8 @@ function navbar_sup() {
   return (
     <div>
       <div className='w-full h-20 z-50 hidden lg:flex flex-row justify-between rounded-b-xl'>
-        <div className='w-3/12 bg-black -z-10 flex justify-center items-end py-6 rounded-bl-xl'>
-            <img src="img/ETEP.png" alt="Logo" className='w-20 ' />
-            <p className='font-bold text-3xl text-[#35c6f4]'>ETEP</p>
+        <div className='w-3/12 bg-black -z-10 flex justify-center items-center py-6 rounded-bl-xl'>
+            <img src="img/ETEP (1).png" alt="Logo" className='h-16 ' />
         </div>
         <ul className='w-9/12 bg-black/50 -z-10 text-[#fcd019] font-medium flex justify-around items-end py-7 rounded-br-xl'>
             <li className='flex items-center gap-2'>
