@@ -32,13 +32,13 @@ const Navbar = () => {
                 </div>
             </div>
             
-            <ul className={`lg:w-7/12 lg:flex lg:justify-around lg:items-center ${isOpen ? "block" : "hidden"} `}>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Our Work</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul className={`absolute top-14 left-0 pl-5 py-5 w-full bg-white lg:py-0 lg:top-0 lg:bg-inherit border-x-2 border-b-2 border-[#fcd019] lg:border-none lg:relative lg:w-7/12 lg:flex lg:justify-around lg:items-center ${isOpen ? "block" : "hidden"} `}>
+                <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">Home</a></li>
+                <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">About us</a></li>
+                <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">Services</a></li>
+                <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">Our Work</a></li>
+                <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">Careers</a></li>
+                <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">Contact</a></li>
             </ul>
             <div className='w-full hidden lg:w-auto lg:flex lg:items-center justify-between'>
                 <div className=''>
