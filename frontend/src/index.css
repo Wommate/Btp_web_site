@@ -15,6 +15,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .back {
   width: 100%;
   height: 710px;
@@ -22,4 +23,22 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+
+
+.background-contact-1{
+  background-image: url('../public/img/img-contraste-1.jpg');
+  background-size: cover;
+  /* filter: brightness(30%); */
+}
+.background-contact-2{
+  background-image: url('../public/img/img-contraste-2.jpg');
+  background-size: cover;
+  /* filter: brightness(30%); */
+}
+.background-contact-3{
+  background-image: url('../public/img/img-contraste-3.jpg');
+  background-size: cover;
+  /* filter: brightness(30%); */
+
 }
