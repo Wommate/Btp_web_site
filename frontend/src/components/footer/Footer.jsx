@@ -63,8 +63,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='bg-black text-white md:text-base text-sm flex py-6 px-4 justify-center'>
-                    <p>© Copyright <strong>ETEP</strong>. Tous droits réservé Designed by <a className='font-bold text-[#fcd019]' href="#">Wommate Technology</a></p>
-                    
+                <p>© Copyright <strong>ETEP</strong>. Tous droits réservé Designed by <a className='font-bold text-[#fcd019]' href="#">Wommate Technology</a></p>
             </div>
         </div>
     );
