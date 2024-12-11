@@ -7,8 +7,6 @@ const sequelize = new Sequelize('wommate_btp_web_site', 'root', '', {
 });
 
 
-
-
 sequelize
   .authenticate()
   .then(() => console.log('Connection to MySQL has been established successfully.'))

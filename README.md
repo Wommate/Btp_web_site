@@ -15,11 +15,11 @@ site web vitrine pour des besoins de BTP
 ## Coté bachend 
 
     --- cd dans le dossier backend ( cd backend)
-    --- avoir php 8
-    --- avoir composer
-    --- installer les dépendances ( composer install)
+    --- avoir node --version (<=18)
+    --- avoir npm
+    --- installer les dépendances ( npm install)
 
-    --- démarré le projet backend ( php artisan serve)
+    --- démarré le projet backend (npm start)
 
 ### pour le travail en équipe
 
