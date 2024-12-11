@@ -7,6 +7,7 @@ const galleryRoutes = require('./controllers/gallery.ctrl');
 const contactRoutes = require('./controllers/contact.ctrl');
 const serviceRoutes = require('./controllers/service.ctrl'); 
 const blogRoutes = require('./controllers/blog.ctrl');
+const quoteRoutes = require('./controllers/quote.ctrl');
 
 
 const app = express();
@@ -21,6 +22,7 @@ app.use('/api/galleries', galleryRoutes);
 app.use('/api/contacts', contactRoutes);
 app.use('/api/services', serviceRoutes); 
 app.use('/api/blogs', blogRoutes);
+app.use('/api/devis', quoteRoutes);
 
 const PORT = process.env.PORT || 4000;
 
