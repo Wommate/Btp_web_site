@@ -3,6 +3,7 @@ import './navbar.css'
 import Navbar_sup from '../navbar_sup/navbar_sup'
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ const Navbar = () => {
             
             <ul className={`absolute top-14 left-0 pl-5 py-5 w-full bg-white lg:py-0 lg:top-0 lg:bg-inherit border-x-2 border-b-2 border-[#fcd019] lg:border-none lg:relative lg:w-7/12 lg:flex lg:justify-around lg:items-center ${isOpen ? "block" : "hidden"} `}>
                 <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">Home</a></li>
-                <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">About us</a></li>
+                <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><Link to="/about">À propos</Link></li>
                 <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">Services</a></li>
                 <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">Our Work</a></li>
                 <li className='hover:bg-[#35c6f4] lg:hover:bg-inherit lg:hover:text-[#fcd019]'><a href="#">Careers</a></li>

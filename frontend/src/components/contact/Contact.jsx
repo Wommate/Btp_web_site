@@ -5,7 +5,7 @@ import { PiPhoneCall } from 'react-icons/pi';
 
 const Contact = () => {
     return (
-        <div className='flex md:flex-row flex-col p-12 w-full'>
+        <div className='flex lg:hidden md:flex-row flex-col p-12 w-full'>
             <div className='md:rounded-bl-xl md:rounded-tl-xl md:rounded-tr-none rounded-t-xl md:py-3 py-20 md:px-5 px-4 md:pl-20 md:w-1/2 w-full flex flex-col md:gap-10 gap-16'>
                 <h1 className='md:text-5xl text-black text-3xl font-bold md:text-left text-center'>
                     Contactez-nous 
@@ -17,7 +17,7 @@ const Contact = () => {
                         <p className='md:text-xl text-base text-white text-left font-bold'>+221 78 235 45 70</p>
                     </div>
                 </div>
-                <div className='absolute top-[47%] left-[22%] bg-[#fcd019] p-4 w-16 h-[58px] rounded-b-full'></div>
+                <div className='absolute top-[960px] left-[22%] bg-[#fcd019] p-4 w-16 h-[58px] rounded-b-full'></div>
                 <div className='background-contact-2 flex gap-3 shadow p-6 rounded-2xl w-3/4'>
                     <LuMessageSquareText className='font-bold md:text-5xl my-2 text-5xl bg-[#35c6f4] text-white rounded-xl p-3' />
                     <div>
@@ -25,7 +25,7 @@ const Contact = () => {
                         <p className='md:text-xl text-white text-base text-left font-bold'>etep02@gmail.com</p>
                     </div>
                 </div>
-                <div className='absolute bottom-[105px] left-[22%] bg-[#fcd019] p-4 w-16 h-[58px] rounded-b-full'></div>
+                <div className='absolute top-[1110px] left-[22%] bg-[#fcd019] p-4 w-16 h-[58px] rounded-b-full'></div>
                 <div className='background-contact-3 flex gap-3 shadow p-6 rounded-2xl w-3/4'>
                     <GiPositionMarker className='font-bold md:text-5xl text-5xl my-2 bg-[#35c6f4] text-white rounded-xl p-3' />
                     <div>
