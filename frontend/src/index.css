@@ -25,10 +25,7 @@ code {
   background-size: cover;
   background-position: top;
 }
-/*Section Gallery: style splide__row  */
-.splide__arrows {
-  
-}
+/*Page Home Section Gallery: style splide__row  */
 .splide__arrows .splide__arrow {
   background-color: #fcd019;
 }
@@ -40,6 +37,16 @@ code {
 }
 .splide__arrows .splide__arrow .react_row {
   color: aliceblue;
+}
+
+/*Page A propos section Header  */
+.backHeader {
+  width: 100%;
+  height: 710px;
+  background-image: url('/public/img/IMG-20241130-WA0157.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .background-contact-1{
