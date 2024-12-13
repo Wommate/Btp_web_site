@@ -25,8 +25,8 @@ const Contact = () => {
                         <p className='md:text-xl text-white text-base text-left font-bold'>etep02@gmail.com</p>
                     </div>
                 </div>
-                {/* <div className='absolute md:-bottom-[57%] -bottom-[8%] md:left-[22%] left-[40%] bg-[#fcd019] p-4 w-16 h-[58px] rounded-b-full'></div> */}
-                <div className='background-contact-3 flex gap-3 shadow p-6 rounded-2xl md:w-3/4 w-full'>
+                {/* <div className='absolute top-[1110px] left-[22%] bg-[#fcd019] p-4 w-16 h-[58px] rounded-b-full'></div> */}
+                <div className='background-contact-3 flex gap-3 shadow p-6 rounded-2xl w-3/4'>
                     <GiPositionMarker className='font-bold md:text-5xl text-5xl my-2 bg-[#35c6f4] text-white rounded-xl p-3' />
                     <div>
                         <p className='text-xl text-left font-semibold text-[#35c6f4]'>Notre adresse</p>
