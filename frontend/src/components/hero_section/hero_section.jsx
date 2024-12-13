@@ -9,7 +9,7 @@ function hero_section() {
                 <h1 className='flex flex-col text-[#fcd019] font-bold text-center text-4xl lg:text-left lg:text-6xl'>ETEP <span className='text-[#35c6f4] lg:text-left font-bold text-2xl text-center lg:text-3xl'>Entreprise de Travaux d'Equipement et de Prestations Diverses</span></h1>
                 <div className='flex flex-col items-center lg:items-start gap-4'>
                     <p className='text-white text-center lg:text-left lg:text-xl'>Chargée de la mise en oeuvre de tous les travaux de construction, de réhabilitation et d'entretien de routes, de ponts et d'autres ouvrages d'art.</p>
-                    <a href="../../pages/a_propos/a_propos.jsx" className='px-6 py-3 rounded-lg bg-[#fcd019] text-white font-semibold'>Learn more</a>
+                    <a href="#" className='px-6 py-3 rounded-lg bg-[#fcd019] text-white font-semibold'>Learn more</a>
                 </div>
             </div>
             <div className='w-1/2 mr-20 lg:mr-0 lg:pt-40 xl:pt-40 hidden md:block '>
