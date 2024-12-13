@@ -5,7 +5,7 @@ import { PiPhoneCall } from 'react-icons/pi';
 
 const Contact = () => {
     return (
-        <div className='flex lg:hidden md:flex-row flex-col p-12 w-full'>
+        <div className='flex md:flex-row flex-col p-12 w-full'>
             <div className='md:rounded-bl-xl md:rounded-tl-xl md:rounded-tr-none rounded-t-xl md:py-3 py-20 md:px-5 px-4 md:pl-20 md:w-1/2 w-full flex flex-col md:gap-10 gap-16'>
                 <h1 className='md:text-5xl text-black text-3xl font-bold md:text-left text-center'>
                     Contactez-nous 
