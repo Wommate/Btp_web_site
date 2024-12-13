@@ -18,7 +18,7 @@ const Footer = () => {
                         exercitationem neque placeat quia eligendi, minus omnis!
                     </p>
                     <div className='flex gap-6 my-10'>
-                        <a className='text-xl bg-[#fcd019] hover:bg-transparent hover:text-[#fcd019] duration-500 text-black p-1.5 rounded-full' href="#"><FaFacebook /></a>
+                        <a className='text-xl bg-[#fcd019] hover:bg-[transparent] hover:text-[#fcd019] duration-500 text-black p-1.5 rounded-full' href="#"><FaFacebook /></a>
                         <a className='text-xl bg-[#fcd019] hover:bg-transparent hover:text-[#fcd019] duration-500 text-black p-1.5 rounded-full' href="#"><BsInstagram /></a>
                         <a className='text-xl bg-[#fcd019] hover:bg-transparent hover:text-[#fcd019] duration-500 text-black p-1.5 rounded-full' href="#"><FaTiktok /></a>
                     </div>

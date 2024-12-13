@@ -1,18 +1,14 @@
-import './App.css';
-import Contact from './components/contact/Contact';
-import FAQ from './components/faq/FAQ';
-import Footer from './components/footer/Footer';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/about";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Btp WebSite</h1>
-        <FAQ />
-        <Contact />
-        <Footer />
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
   );
 }
 
