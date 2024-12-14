@@ -1,8 +1,11 @@
 import React from 'react'
+import ServiceContent from '../components/services/Services';
 
 function Services() {
   return (
-    <div>Services</div>
+    <div className='my-32'>
+      <ServiceContent />
+    </div>
   )
 }
 

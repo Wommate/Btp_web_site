@@ -49,6 +49,10 @@ code {
   background-position: center;
 }
 
+
+
+/* Pages contact les coordonnees de ETEP */
+
 .background-contact-1{
   background-image: url('../public/img/img-contraste-1.jpg');
   background-size: cover;
