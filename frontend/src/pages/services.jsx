@@ -3,7 +3,7 @@ import ServiceContent from '../components/services/Services';
 
 function Services() {
   return (
-    <div className='my-32'>
+    <div>
       <ServiceContent />
     </div>
   )
