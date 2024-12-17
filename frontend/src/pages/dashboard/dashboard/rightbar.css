@@ -1,0 +1,12 @@
+.rightbar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100%;
+    border-left: 1px solid #ddd;
+  }
+  
+  .rightbar h2 {
+    margin-bottom: 20px;
+  }
+  
