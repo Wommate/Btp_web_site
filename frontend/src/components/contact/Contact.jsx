@@ -45,6 +45,20 @@ const Contact = () => {
                         </div>
                     </div> 
                 </div>
+                <div className='background-contact-2 flex gap-3 shadow p-6 rounded-2xl w-3/4'>
+                    <LuMessageSquareText className='font-bold md:text-5xl my-2 text-5xl bg-[#35c6f4] text-white rounded-xl p-3' />
+                    <div>
+                        <p className='md:text-xl text-base text-left font-semibold text-[#35c6f4]'>Notre courriel</p>
+                        <p className='md:text-xl text-white text-base text-left font-bold'>etep02@gmail.com</p>
+                    </div>
+                </div>
+                <div className='background-contact-3 flex gap-3 shadow p-6 rounded-2xl w-3/4'>
+                    <GiPositionMarker className='font-bold md:text-5xl text-5xl my-2 bg-[#35c6f4] text-white rounded-xl p-3' />
+                    <div>
+                        <p className='text-xl text-left font-semibold text-[#35c6f4]'>Notre adresse</p>
+                        <p className='md:text-xl text-base text-white text-left font-bold'>Dakar, Senegal</p>
+                    </div>
+                </div> 
             </div>
             <div className='md:w-1/2 p-6 mt-20 md:rounded-r-xl md:rounded-bl-none rounded-b-xl'>
                 <h2 className='font-bold md:text-4xl text-2xl text-black mb-8 border-b-2 border-[#fcd019] pb-2'>Ou via le formulaire</h2>
