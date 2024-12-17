@@ -45,6 +45,7 @@ const Contact = () => {
                         </div>
                     </div> 
                 </div>
+                
             </div>
             <div className='md:w-1/2 p-6 mt-20 md:rounded-r-xl md:rounded-bl-none rounded-b-xl'>
                 <h2 className='font-bold md:text-4xl text-2xl text-black mb-8 border-b-2 border-[#fcd019] pb-2'>Ou via le formulaire</h2>
@@ -56,7 +57,7 @@ const Contact = () => {
                         <input className='border rounded-xl p-1 px-2 placeholder:text-lg placeholder:px-2' type="text" name="subject" id="subject" placeholder='Objet' />
                         <input className='border rounded-xl p-1 px-2 placeholder:text-lg placeholder:px-2' type="tel" name="phone" id="phone" placeholder='Tel' />
                         <textarea name="content" id="content" rows="10" className='border rounded-lg p-1 px-2 h-44 placeholder:text-lg placeholder:px-2' placeholder='Ecrivez votre message'></textarea>
-                    <input type="submit" value="Soumettre" className='p-3 rounded-xl bg-[#fcd019] text-black text-lg mt-3 font-bold md:w-1/4 w-1/2 mx-auto hover:shadow-md hover:shadow-[#35c6f4] duration-500' />
+                    <input type="submit" value="Soumettre" className='p-3 rounded-xl bg-[#fcd019] text-black md:text-lg text-sm mt-3 font-bold md:w-1/4 w-1/2 mx-auto hover:shadow-md hover:shadow-[#35c6f4] duration-500' />
                 </form>
             </div>
         </div>

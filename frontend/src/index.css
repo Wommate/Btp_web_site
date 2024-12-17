@@ -75,3 +75,23 @@ code {
   /* filter: brightness(70%); */
 
 }
+.image-contraste-5{
+  background-image: url('../public/img/img-contraste-4.jpg');
+  background-size: cover;
+
+  /* filter: brightness(50%); */
+
+}
+
+
+
+/* Box shadow pour les cartes dans la page service */
+.box_shadow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* un background d'image  dans la page service pour le section qui renvoie à la page de contact  */
+.bg_section_contact_service{
+  background-image: url('../public/img/scene-construction-2.jpg');
+  background-size: cover;
+}

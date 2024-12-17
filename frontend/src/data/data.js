@@ -46,3 +46,32 @@ export const dataServices = [
         description: 'Delectus sequi eius obcaecati reprehenderit ducimus ipsam atque voluptate aspernatur commodi, molestias fuga sunt officiis modi officia quas quam, veritatis voluptas consequuntur. Possimus doloremque debitis, tempore nobis ea pariatur amet beatae, ducimus a ipsa itaque, veniam dicta. Aliquid, amet. Quisquam omnis libero inventore voluptates magni corporis odit quos placeat error esse qui cupiditate et reprehenderit, delectus non animi exercitationem fugit? Illo dolor tempore velit sapiente nobis aspernatur quasi assumenda aut dolorum!',
     },
 ]
+
+
+export const datasCartHome = [
+    {
+        id: 1,
+        title: "Batiment et Travaux publics",
+        photo: '',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est.'
+    },
+    {
+        id: 2,
+        title: "Electricité en industrie",
+        photo: '',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est'
+    },
+    {
+        id: 3,
+        title: "Tuyauterie industriel",
+        photo: '',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est'
+    },
+    {
+        id: 4,
+        title: "Charpente métalique",
+        photo: ''   ,
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est'
+    },
+
+];
