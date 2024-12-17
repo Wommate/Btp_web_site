@@ -21,7 +21,7 @@ const Services = () => {
             </div>
             <div className='my-20 grid md:grid-cols-4 grid-cols-1 gap-10 md:px-4 px-20 w-full '>
                 {datasCart.map((data) => (
-                    <Cart
+                    <Cart 
                         {...data}
                     />
                 ))}

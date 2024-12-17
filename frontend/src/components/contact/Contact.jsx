@@ -21,7 +21,7 @@ const Contact = () => {
                                 <p className='md:text-xl text-base text-white text-left font-bold'>+221 77 544 19 48</p>
                             </div>
                         </div>
-                        <div className='w-14 h-14 bg-[#fcd019] rounded-b-3xl z-20 mx-auto -mt-1'></div>
+                        <div className='w-14 h-14 bg-[#fcd019] rounded-b-xl z-20 mx-auto -mt-1'></div>
                     </div>
 
                     <div className='md:w-3/4 w-full'>
@@ -33,7 +33,7 @@ const Contact = () => {
                                 <p className='md:text-xl text-white text-base text-left font-bold'>contact@etepbaraseck.com</p>
                             </div>
                         </div>
-                        <div className='w-14 h-14 bg-[#fcd019] rounded-b-3xl z-20 mx-auto -mt-1'></div>
+                        <div className='w-14 h-14 bg-[#fcd019] rounded-b-xl z-20 mx-auto -mt-1'></div>
                     </div>
                     <div className='md:w-3/4 w-full'>
                         <div className='background-contact-3 flex gap-3 shadow p-6 rounded-2xl'>
@@ -50,13 +50,13 @@ const Contact = () => {
                 <h2 className='font-bold md:text-4xl text-2xl text-black mb-8 border-b-2 border-[#fcd019] pb-2'>Ou via le formulaire</h2>
                 <form action="#" method="post" className='flex flex-col gap-5 justify-center'>
                     <div className="flex flex-row gap-3 w-full">
-                        <input className='border rounded-lg p-1 px-2 placeholder:text-lg placeholder:px-2 w-1/2' type="text" name="name" id="name" placeholder='Nom' />
-                        <input className='border rounded-lg p-1 px-2 placeholder:text-lg placeholder:px-2 w-1/2' type="email" name="email" id="email" placeholder='Email' />
+                        <input className='border rounded-xl p-1 px-2 placeholder:text-lg placeholder:px-2 w-1/2' type="text" name="name" id="name" placeholder='Nom' />
+                        <input className='border rounded-xl p-1 px-2 placeholder:text-lg placeholder:px-2 w-1/2' type="email" name="email" id="email" placeholder='Email' />
                     </div> 
-                        <input className='border rounded-lg p-1 px-2 placeholder:text-lg placeholder:px-2' type="text" name="subject" id="subject" placeholder='Objet' />
-                        <input className='border rounded-lg p-1 px-2 placeholder:text-lg placeholder:px-2' type="tel" name="phone" id="phone" placeholder='Tel' />
+                        <input className='border rounded-xl p-1 px-2 placeholder:text-lg placeholder:px-2' type="text" name="subject" id="subject" placeholder='Objet' />
+                        <input className='border rounded-xl p-1 px-2 placeholder:text-lg placeholder:px-2' type="tel" name="phone" id="phone" placeholder='Tel' />
                         <textarea name="content" id="content" rows="10" className='border rounded-lg p-1 px-2 h-44 placeholder:text-lg placeholder:px-2' placeholder='Ecrivez votre message'></textarea>
-                    <input type="submit" value="Soumettre" className='p-3 rounded-lg bg-[#fcd019] text-black text-lg mt-3 font-bold md:w-1/4 w-1/2 mx-auto hover:shadow-md hover:shadow-[#35c6f4] duration-500' />
+                    <input type="submit" value="Soumettre" className='p-3 rounded-xl bg-[#fcd019] text-black text-lg mt-3 font-bold md:w-1/4 w-1/2 mx-auto hover:shadow-md hover:shadow-[#35c6f4] duration-500' />
                 </form>
             </div>
         </div>

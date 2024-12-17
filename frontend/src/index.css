@@ -66,6 +66,12 @@ code {
 .background-contact-3{
   background-image: url('../public/img/img-contraste-3.jpg');
   background-size: cover;
-  /* filter: brightness(30%); */
+  /* filter: brightness(70%); */
+}
+
+.image-contraste-4{
+  background-image: url('../public/img/img-contraste-4.jpg');
+  background-size: cover;
+  /* filter: brightness(70%); */
 
 }
