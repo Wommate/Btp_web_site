@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./blog.css"; 
+import "./blog.css";
 
 function BlogForm() {
   const [formData, setFormData] = useState({
@@ -11,6 +11,7 @@ function BlogForm() {
 
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Gestion des changements dans le formulaire
   const handleChange = (e) => {
@@ -24,6 +25,7 @@ function BlogForm() {
   // Gestion de la soumission du formulaire
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
       const response = await axios.post(
@@ -33,25 +35,42 @@ function BlogForm() {
 
       if (response.status === 200 || response.status === 201) {
         setSuccessMessage("Le blog a été ajouté avec succès !");
+        setError(null);
         setFormData({
           title: "",
           photo: "",
           long_description: "",
         });
-        setError(null);
+
+        setTimeout(() => {
+          setSuccessMessage(null);
+        }, 4000);
       }
     } catch (err) {
       setError("Une erreur s'est produite lors de l'ajout du blog.");
       setSuccessMessage(null);
+
+      setTimeout(() => {
+        setError(null);
+      }, 4000);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
     <div className="blog-container">
       <h2>Ajouter un Blog</h2>
-      {successMessage && <p className="success-message">{successMessage}</p>}
-      {error && <p className="error-message">{error}</p>}
+
       <form onSubmit={handleSubmit} className="blog-form">
+              {/* Pop-up pour les messages de succès */}
+      {successMessage && (
+        <div className="popup success-popup">{successMessage}</div>
+      )}
+
+      {/* Pop-up pour les messages d'erreur */}
+      {error && <div className="popup error-popup">{error}</div>}
+      
         <div className="form-group">
           <label htmlFor="title">Titre :</label>
           <input
@@ -85,8 +104,8 @@ function BlogForm() {
             required
           ></textarea>
         </div>
-        <button type="submit" className="submit-button">
-          Ajouter
+        <button type="submit" className="submit-button" disabled={isSubmitting}>
+          {isSubmitting ? "En cours..." : "Ajouter"}
         </button>
       </form>
     </div>
