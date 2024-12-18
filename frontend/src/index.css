@@ -35,8 +35,16 @@ code {
 .splide__arrows .splide__arrow--next {
   transform: rotate(0deg);
 }
-.splide__arrows .splide__arrow .react_row {
-  color: aliceblue;
+
+/* Page Home Section Projects:  */
+.splide__arrows .projects-prev {
+  transform: rotate(180deg);
+}
+.splide__arrows .projects-next {
+  transform: rotate(0deg);
+}
+.splide__arrows .splide__arrow .react_row{
+  font-size: smaller;
 }
 
 /*Page A propos section Header  */
