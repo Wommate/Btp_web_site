@@ -1,9 +1,16 @@
 .sidebar {
     width: 200px;
-    background-color: #333;
+    background-color: #35c6f4;
     color: #fff;
     padding: 20px;
     height: 100%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .sidebar:hover {
+    width: 350px;
   }
   
   .sidebar h2 {
@@ -21,6 +28,26 @@
   }
   
   .sidebar li:hover {
-    color: #f4f4f4;
+    color: #fcd019;
+    font-size: 180%;
+    
   }
   
+
+  /* Conteneur pour le logo */
+.logo-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Style de l'image du logo */
+.logo {
+  width: 100px; 
+  height:  100px; 
+  background-color: #fff;
+  border-radius: 50%; 
+  box-shadow: 0 4px 6px rgba(112, 84, 84, 0.1); /* Ombre douce */
+}
