@@ -1,15 +1,9 @@
 import React from 'react'
 
 function Header() {
-  return (
-    // <div className="backHeader mb-10">
-    //    <div className='w-full h-full bg-black/30'>
-            
-    //    </div>
-    // </div>
-    
+  return (   
     <div 
-      className="relative h-[600px] bg-no-repeat bg-cover bg-center mb-7 -z-50"
+      className="relative h-[600px] bg-no-repeat bg-cover bg-center -z-50"
       style={{
         backgroundImage: 'url("img/Batiment.jpg")',
         backgroundAttachment: 'fixed'
