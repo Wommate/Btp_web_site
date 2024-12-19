@@ -38,7 +38,7 @@ function Projects() {
             backgroundImage: 'url("imgconstruction-silhouette.jpg")',
         }}>
             <div className="absolute inset-0 flex items-center md:pl-24 bg-[#fcd019]/30 text-4xl font-bold ">
-                <h1 className="z-10 text-center md:text-left p-1 md:p-0">
+                <h1 className="z-10 text-left px-5 md:p-0">
                     Voici quelques-uns de nos <br /> projets réalisés
                 </h1>
             </div>
