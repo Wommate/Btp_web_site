@@ -21,6 +21,10 @@ const Contact = sequelize.define('Contact', {
   content: {
     type: DataTypes.TEXT,
     allowNull: false
+  },
+  notified: { 
+    type: DataTypes.BOOLEAN, 
+    defaultValue: true   
   }
 }, {
   timestamps: true, 

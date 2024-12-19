@@ -1,14 +1,84 @@
 .rightbar {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    height: 100%;
-    border-left: 1px solid #ddd;
-  }
-  .rightbar:hover {
-    width: 500px;
-  }
-  .rightbar h2 {
-    margin-bottom: 20px;
-  }
-  
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  transition: width 0.3s ease-in-out;
+}
+
+.rightbar:hover {
+  width: 700px;
+}
+
+.rightbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.notification-item strong {
+  font-weight: bold;
+}
+
+.rightbar button {
+  background-color: #35c6f4;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.rightbar button:hover {
+  background-color: #fcd019;
+}
+
+.show-more-button {
+  margin-top: 10px;
+  display: block;
+  width: 30%;
+  text-align: center;
+  padding: 8px;
+  background-color: #35c6f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-more-button:hover {
+  background-color: #218838;
+}
+
+.expand-button {
+  background-color: yellow;
+  border: none;
+  color: black;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.notification-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.notification-item:hover {
+  background-color: #f9f9f9;
+}
+
+.notification-unred {
+  color: #9e0e0e;
+}
