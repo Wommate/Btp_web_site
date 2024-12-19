@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./login.css";
+import "./register.css";
 
-function LoginForm() {
+function RegisterForm() {
   const [formData, setFormData] = useState({
+    prenom: "",
+    nom: "",
     email: "",
     password: "",
+    role: "",
+    etat: true,
   });
 
   const [error, setError] = useState(null);
@@ -25,16 +29,22 @@ function LoginForm() {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:4000/api/login", formData);
+      const response = await axios.post("http://localhost:4000/api/register", formData);
 
-      if (response.status === 200) {
-        // Sauvegarder le token JWT dans le localStorage pour l'utiliser dans les futures requêtes
-        localStorage.setItem("token", response.data.token);
-        setSuccessMessage("Connexion réussie !");
+      if (response.status === 201) {
+        setSuccessMessage("Inscription réussie !");
+        setFormData({
+          prenom: "",
+          nom: "",
+          email: "",
+          password: "",
+          role: "",
+          etat: true,
+        });
         setError(null);
       }
     } catch (err) {
-      const message = err.response?.data?.message || "Erreur inconnue.";
+      const message = err.response?.data?.error || "Erreur inconnue.";
       setError(message);
       setSuccessMessage(null);
     } finally {
@@ -43,12 +53,36 @@ function LoginForm() {
   };
 
   return (
-    <div className="login-container">
-      <h2>Connexion</h2>
-      <form onSubmit={handleSubmit} className="login-form">
+    <div className="register-container">
+      <h2>Inscription</h2>
+      <form onSubmit={handleSubmit} className="register-form">
         {successMessage && <div className="popup success-popup">{successMessage}</div>}
         {error && <div className="popup error-popup">{error}</div>}
         
+        <div className="form-group">
+          <label htmlFor="prenom">Prénom :</label>
+          <input
+            type="text"
+            id="prenom"
+            name="prenom"
+            value={formData.prenom}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="nom">Nom :</label>
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            value={formData.nom}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
         <div className="form-group">
           <label htmlFor="email">Email :</label>
           <input
@@ -73,12 +107,24 @@ function LoginForm() {
           />
         </div>
 
+        <div className="form-group">
+          <label htmlFor="role">Rôle :</label>
+          <input
+            type="text"
+            id="role"
+            name="role"
+            value={formData.role}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
         <button type="submit" className="submit-button" disabled={loading}>
-          {loading ? "Chargement..." : "Se connecter"}
+          {loading ? "Chargement..." : "S'inscrire"}
         </button>
       </form>
     </div>
   );
 }
 
-export default LoginForm;
+export default RegisterForm;
