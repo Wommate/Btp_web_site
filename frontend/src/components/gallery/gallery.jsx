@@ -7,44 +7,6 @@ import { BiSolidRightArrow } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 function Gallery() {
-  // return (
-  //   <div className='my-10'>
-  //     <h2 className='text-3xl font-bold text-center mb-5'>Gallery</h2>
-  //     <Splide  options={ {rewind: true, width : 900, height : 200, gap : '1rem', perPage: 4, autoplay: true, interval: 30000,} } className="mx-auto" aria-label="Mes images préférées"> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0114.jpg" alt="Image 1"/> 
-  //       </SplideSlide> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0182.jpg" alt="Image 2"/> 
-  //       </SplideSlide> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0234.jpg" alt="Image 3"/> 
-  //       </SplideSlide> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0270.jpg" alt="Image 4"/> 
-  //       </SplideSlide> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0319.jpg" alt="Image 5"/> 
-  //       </SplideSlide> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0318.jpg" alt="Image 6"/> 
-  //       </SplideSlide> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0317.jpg" alt="Image 7"/> 
-  //       </SplideSlide> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0284.jpg" alt="Image 8"/> 
-  //       </SplideSlide> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0273.jpg" alt="Image 9"/> 
-  //       </SplideSlide> 
-  //       <SplideSlide> 
-  //         <img src="img/etep/IMG-20241130-WA0262.jpg" alt="Image 10"/> 
-  //       </SplideSlide> 
-  //     </Splide>
-  //   </div>
-  // )
-
   // État pour le modal
   const [selectedImage, setSelectedImage] = useState(null); // Image sélectionnée
   const [isModalOpen, setIsModalOpen] = useState(false); // État du modal
@@ -75,7 +37,7 @@ function Gallery() {
   };
 
   return (
-    <div className='my-10'>
+    <div className='mb-10'>
       <h1 className='text-4xl font-bold text-center mb-5'>Gallery</h1>
       <Splide 
         hasTrack={ false } 
