@@ -60,7 +60,7 @@ const Footer = () => {
                     </div>
                     <div className='flex gap-2'>
                         <GiPositionMarker className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />
-                        <a href='' className='hover:text-[#fcd019] duration-500'>Quartier Ngane - lot 40 Kaolack</a>
+                        <a href='https://maps.app.goo.gl/pJuE5xG7GgoVAhFF9' target='_blank' className='hover:text-[#fcd019] duration-500'>Quartier Ngane - lot 40 Kaolack</a>
                     </div>
                     <div className='flex gap-2'>
                         <MdEmail className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />

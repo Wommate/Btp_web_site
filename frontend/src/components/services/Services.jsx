@@ -9,7 +9,6 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const Services = () => {
     // console.log(dataServices);
-
     return (
         <div className='flex flex-col'>
             <div className=' w-full'>

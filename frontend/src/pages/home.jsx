@@ -14,7 +14,7 @@ function Home() {
       <Gallery />
       <ServicesHome />
       <WorksManage />
-      <Contact />
+    <Contact />
     </div>
   );
 }

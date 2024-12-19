@@ -1,20 +1,20 @@
 export const datasCart = [
     {
         id: 1,
-        title: "Batiment et Travaux publics",
-        photo: 'img/img_1.jpg',
+         photo: 'img/genie-civil.jpg',
+        title: 'Génie Civil',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est.'
     },
     {
         id: 2,
-        title: "Electricité en industrie",
-        photo: 'img/electricite.jpg',
+        photo: 'img/hydraulique.jpg',
+        title: 'Hydraulique',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est'
     },
     {
         id: 3,
-        title: "Tuyauterie industriel",
-        photo: 'img/tuyauterie.jpg',
+        photo: 'img/archi-3d.jpg',
+        title: 'Architecture et Plan 3D',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est'
     },
     {
@@ -51,26 +51,22 @@ export const dataServices = [
 export const datasCartHome = [
     {
         id: 1,
-        title: "Batiment et Travaux publics",
-        photo: '',
+        title: 'Batiment et travaux public',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est.'
     },
     {
         id: 2,
-        title: "Electricité en industrie",
-        photo: '',
+        title: 'Génie civil',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est'
     },
     {
         id: 3,
-        title: "Tuyauterie industriel",
-        photo: '',
+        title: 'Hydraulique',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est'
     },
     {
         id: 4,
-        title: "Charpente métalique",
-        photo: ''   ,
+        title: "Architecture et Plan 3D",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis delectus excepturi itaque ut asperiores, ea reprehenderit nulla magni est'
     },
 
