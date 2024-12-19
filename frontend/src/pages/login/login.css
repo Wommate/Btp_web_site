@@ -1,99 +1,100 @@
-.gallery-container {
+.login-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-color: #f9f9f9; 
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #5f5f64, #444);
+  }
+  
+  .login-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-out;
   }
   
   h2 {
+    text-align: center;
     color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .gallery-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
   }
   
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
   
   label {
     display: block;
-    margin-bottom: 5px;
-    color: #555;
     font-weight: bold;
+    color: #555;
+    margin-bottom: 0.5rem;
   }
   
-  input,
-  textarea {
+  input[type="email"], input[type="password"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  input:focus,
-  textarea:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  .submit-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .submit-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .success-message {
-    color: green;
-    margin-bottom: 15px;
-  }
-  
-  .error-message {
-    color: red;
-    margin-bottom: 15px;
-  }
-  
-
-
-
-  .popup {
-    padding: 10px;
-    margin-top: 10px;
+    padding: 0.75rem;
+    border: 2px solid #35c6f4;
     border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #fcd019;
+    outline: none;
+  }
+  
+  button.submit-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #35c6f4;
     color: white;
-    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.submit-button:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+  }
+  
+  button.submit-button:hover {
+    background-color: #fcd019;
+  }
+  
+  .popup {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
     text-align: center;
   }
   
   .success-popup {
-    background-color: #4CAF50; 
+    background-color: #28a745;
+    color: white;
   }
   
   .error-popup {
-    background-color: #f44336; 
+    background-color: #dc3545;
+    color: white;
   }
   
-  .submit-button[disabled] {
-    background-color: #ddd;
-    cursor: not-allowed;
+  /* Animation pour l'apparition du formulaire */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   

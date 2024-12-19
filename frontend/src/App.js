@@ -4,7 +4,8 @@ import React from 'react';
 //import Dashboard from './pages/dashboard/dashboard/dashboard';
 // import BlogForm from './pages/dashboard/blog/blog';
 // import GalleryForm from './pages/dashboard/gallery/gallery';
-import LoginForm from './pages/login/login';  
+//import RegisterForm from './pages/register/register';  
+import LoginForm from './pages/login/login'; 
 
 function App() {
   return (
@@ -29,6 +30,8 @@ export default App;
     // <GalleryForm />
     // <BlogForm />
     // <Dashboard />
+    // <LoginForm />
+    //<RegisterForm />
 
 
 

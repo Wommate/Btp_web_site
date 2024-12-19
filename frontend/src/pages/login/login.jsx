@@ -28,7 +28,7 @@ function LoginForm() {
       const response = await axios.post("http://localhost:4000/api/login", formData);
 
       if (response.status === 200) {
-        // Sauvegarder le token JWT dans le localStorage pour l'utiliser dans les futures requêtes
+        // Sauvegarder le token JWT dans le localStorage 
         localStorage.setItem("token", response.data.token);
         setSuccessMessage("Connexion réussie !");
         setError(null);
@@ -44,8 +44,8 @@ function LoginForm() {
 
   return (
     <div className="login-container">
-      <h2>Connexion</h2>
       <form onSubmit={handleSubmit} className="login-form">
+        <h2>Connexion</h2>
         {successMessage && <div className="popup success-popup">{successMessage}</div>}
         {error && <div className="popup error-popup">{error}</div>}
         
