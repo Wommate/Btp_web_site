@@ -40,13 +40,13 @@ const Services = () => {
                     <Link to="/contact" className='md:text-2xl text-xl hover:text-[#fcd019] duration-500 font-bold md:w-1/3 flex my-5 h-12 bg-white hover:bg-black px-16 mx-auto md:pt-1 pt-2'>Contactez nous <IoIosArrowRoundForward className='md:my-0.5  mx-3 text-4xl' /> </Link>
                 </div>
             </div>
-            <div className='flex flex-col gap-8'>
+            {/* <div className='flex flex-col gap-8'>
                 {dataServices.map((dataService) => (
                    <CartService
                         {...dataService} 
                    />
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 }

@@ -13,6 +13,7 @@ function Home() {
     <div>
       <Hero_section />
       <Dream />
+      <ServicesHome />
       <WorksManage />
       <Projects />
       <Contact />
