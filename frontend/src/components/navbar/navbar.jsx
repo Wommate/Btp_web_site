@@ -13,14 +13,13 @@ const Navbar = () => {
   }
 
   return (
-    <div className='fixed top-0 right-0 left-0'>
+    <div className='fixed top-0 right-0 left-0 z-50'>
         <Navbar_sup />
         <div className='w-full lg:w-11/12 lg:mx-auto mt-0 lg:-mt-3 p-2 border-2 border-[#fcd019] lg:rounded-xl bg-white z-50 flex justify-between'>
             
             <div className='w-full lg:hidden flex items-center justify-between'>
                 <div className='lg:hidden flex justify-center items-end'>
-                    <img src="img/ETEP.png" alt="Logo" className='w-20 ' />
-                    <p className='font-bold text-3xl text-[#35c6f4]'>ETEP</p>
+                    <img src="img/ETEP (1).png" alt="Logo" className='w-20 ' />
                 </div>
                 <div className='flex '>
                 <select name="langue" id="langue" className='mr-5 bg-inherit '>

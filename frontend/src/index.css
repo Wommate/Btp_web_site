@@ -35,8 +35,16 @@ code {
 .splide__arrows .splide__arrow--next {
   transform: rotate(0deg);
 }
-.splide__arrows .splide__arrow .react_row {
-  color: aliceblue;
+
+/* Page Home Section Projects:  */
+.splide__arrows .projects-prev {
+  transform: rotate(180deg);
+}
+.splide__arrows .projects-next {
+  transform: rotate(0deg);
+}
+.splide__arrows .splide__arrow .react_row{
+  font-size: smaller;
 }
 
 /*Page A propos section Header  */
@@ -66,6 +74,32 @@ code {
 .background-contact-3{
   background-image: url('../public/img/img-contraste-3.jpg');
   background-size: cover;
-  /* filter: brightness(30%); */
+  /* filter: brightness(70%); */
+}
 
+.image-contraste-4{
+  background-image: url('../public/img/img-contraste-4.jpg');
+  background-size: cover;
+  /* filter: brightness(70%); */
+
+}
+.image-contraste-5{
+  background-image: url('../public/img/img-contraste-4.jpg');
+  background-size: cover;
+
+  /* filter: brightness(50%); */
+
+}
+
+
+
+/* Box shadow pour les cartes dans la page service */
+.box_shadow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* un background d'image  dans la page service pour le section qui renvoie à la page de contact  */
+.bg_section_contact_service{
+  background-image: url('../public/img/scene-construction-2.jpg');
+  background-size: cover;
 }
