@@ -2,7 +2,7 @@ import React from "react";
 
 function Vision() {
   return (
-    <div class="mb-20 md:flex">
+    <div className="mb-20 md:flex">
       <div className="md:w-1/2 px-10">
         <img src="img/engin.jpg" alt="Engin" className="w-full h-96 rounded-xl" />
       </div>

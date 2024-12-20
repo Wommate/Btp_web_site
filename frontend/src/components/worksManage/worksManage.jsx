@@ -27,7 +27,7 @@ function WorksManage() {
                     backgroundImage: 'url("img/etep/IMG-20241130-WA0139.jpg")',
                     }}
                 >
-                    <div class="absolute -bottom-3 -left-3 w-0 h-0 border-t-[150px] border-t-transparent border-l-[150px] border-l-[#fcd019]/60 rounded-3xl"></div>
+                    <div className="absolute -bottom-3 -left-3 w-0 h-0 border-t-[150px] border-t-transparent border-l-[150px] border-l-[#fcd019]/60 rounded-3xl"></div>
                 </div>
             </div>
         </div>

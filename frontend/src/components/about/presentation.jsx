@@ -3,7 +3,7 @@ import React from "react";
 function Presentation() {
   return (
     <div>
-      <div class="mb-20 bg-gray-50 md:flex md:items-center">
+      <div className="mb-20 bg-gray-50 md:flex md:items-center">
         <div className="presentation md:w-1/2 p-10">
           <h2 className="text-4xl font-bold mb-5">Présentation</h2>
           <p>
