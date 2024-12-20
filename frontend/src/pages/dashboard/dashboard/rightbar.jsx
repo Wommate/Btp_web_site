@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './rightbar.css';
 
+
 const Rightbar = () => {
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -81,13 +82,14 @@ const Rightbar = () => {
   return (
     <div className="rightbar">
       <div className="notification-count">
-        <p>Unread Notifications: <span className="notification-unred"> {counts.unread} </span> </p>
-        <p>Read Notifications: <span className="notification-read">  {counts.read} </span></p>
+        <p>Notifications non Lues: <span className="notification-unred"> {counts.unread} </span> </p>
+        {/* <p>Notifications Lues: <span className="notification-read">  {counts.read} </span></p>
+        <p>Totales Notifications : <span className="notification-read">  {counts.total} </span></p> */}
       </div>
       {loading ? (
         <p>Loading notifications...</p>
       ) : notifications.length === 0 ? (
-        <p>No notifications at the moment.</p>
+        <p>Aucune notification pour le moment !!!</p>
       ) : (
         <>
           <ul>

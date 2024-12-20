@@ -7,8 +7,8 @@ router.get('/get_notifications', async (req, res) => {
   try {
     // Récupérer toutes les notifications où "notified" est faux (non notifié)
     const notifications = await Contact.findAll({
-      where: { notified: 1 }, // Récupère les messages non notifiés
-      order: [['createdAt', 'DESC']], // Trier par date de création, du plus récent au plus ancien
+      where: { notified: 1 }, 
+      order: [['createdAt', 'DESC']], 
     });
 
     // Si aucune notification n'est trouvée
@@ -50,7 +50,7 @@ router.get('/get_read_notifications', async (req, res) => {
     // Récupérer toutes les notifications où "notified" est 0 (marquées comme lues)
     const readNotifications = await Contact.findAll({
       where: { notified: 0 },
-      order: [['createdAt', 'DESC']], // Trier par date de création, du plus récent au plus ancien
+      order: [['createdAt', 'DESC']], 
     });
 
     // Si aucune notification n'est trouvée
@@ -67,12 +67,16 @@ router.get('/get_read_notifications', async (req, res) => {
 });
 
 
-// Compter les notifications lues et non lues
+// Compter les notifications lues et non lues 
 router.get('/count_notifications', async (req, res) => {
   try {
     const unreadCount = await Contact.count({ where: { notified: 1 } });
     const readCount = await Contact.count({ where: { notified: 0 } });
-    res.status(200).json({ unread: unreadCount, read: readCount });
+    const allContact = await Contact.count(); 
+    // const allContact = await Contact.count({ where: { notified: [0, 1] } });
+
+
+    res.status(200).json({ unread: unreadCount, read: readCount, total: allContact });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

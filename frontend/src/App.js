@@ -1,15 +1,15 @@
 import './App.css';
 import React from 'react';
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-//import Dashboard from './pages/dashboard/dashboard/dashboard';
+import Dashboard from './pages/dashboard/dashboard/dashboard';
 // import BlogForm from './pages/dashboard/blog/blog';
 // import GalleryForm from './pages/dashboard/gallery/gallery';
-import RegisterForm from './pages/register/register';  
+//import RegisterForm from './pages/register/register';  
 //import LoginForm from './pages/login/login'; 
 
 function App() {
   return (
-    <RegisterForm />
+    <Dashboard />
     // <Router>
     //   <Routes>
         

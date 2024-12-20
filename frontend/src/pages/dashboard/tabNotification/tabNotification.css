@@ -1,49 +1,74 @@
 .tab-notification {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  .tab-notification h2 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .tab-notification ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .tab-notification li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .tab-notification li:last-child {
-    border-bottom: none;
-  }
-  
-  .tab-notification .notif-date {
-    color: #777;
-    font-size: 0.9rem;
-    margin-left: 10px;
-  }
-  
-  .delete-button {
-    background-color: transparent;
-    border: none;
-    color: red;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
-  .delete-button:hover {
-    color: #ff0000;
-    transform: scale(1.1);
-  }
-  
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.tab-notification h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.tab-notification ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px; 
+  overflow-y: auto; 
+  margin-bottom: 10px;
+}
+
+.tab-notification li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-notification li:last-child {
+  border-bottom: none;
+}
+
+.tab-notification .notif-date {
+  color: #777;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #ff0000;
+  transform: scale(1.1);
+}
+
+.show-more-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.show-more-button:hover {
+  background-color: #0056b3;
+}
+
+.full-list {
+  max-height: none;
+}
+
+.limited-list {
+  max-height: 300px;
+}
