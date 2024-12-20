@@ -8,9 +8,9 @@ const Sidebar = () => {
     <div className="logo-container"><img src="/img/ETEP.png" alt="Logo" className="logo" /></div>
       <ul>
         <li>Accueil</li>
-        <li>Blog</li>
-        <li>Gallery</li>
-        <li>Services</li>
+        <li>Ajouter Blog</li>
+        <li>Ajouter Gallery</li>
+        <li>Ajouter utilisateur</li>
       </ul>
     </div>
   );

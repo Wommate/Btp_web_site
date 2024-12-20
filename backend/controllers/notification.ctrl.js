@@ -5,22 +5,23 @@ const router = express.Router();
 // Route pour récupérer les notifications des contacts
 router.get('/get_notifications', async (req, res) => {
   try {
-    // Récupérer toutes les notifications où "notified" est faux (non notifié)
+    // Récupérer toutes les notifications où "notified" est vrai (1)
     const notifications = await Contact.findAll({
       where: { notified: 1 }, 
       order: [['createdAt', 'DESC']], 
     });
 
-    // Si aucune notification n'est trouvée
-    if (notifications.length === 0) {
+    // Vérification si des notifications existent
+    if (!notifications || notifications.length === 0) {
       return res.status(404).json({ message: 'No notifications found' });
     }
 
     // Renvoi des notifications sous forme de JSON
-    res.status(200).json(notifications);
+    return res.status(200).json(notifications);
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: error.message });
+    // Gestion des erreurs
+    console.error('Error fetching notifications:', error);
+    return res.status(500).json({ error: 'An error occurred while fetching notifications' });
   }
 });
 

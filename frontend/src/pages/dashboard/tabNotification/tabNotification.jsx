@@ -60,11 +60,11 @@ const TabNotification = () => {
 
   return (
     <div className="tab-notification">
-      <h2>Read Notifications</h2>
+      <h2>Notifications Lues</h2>
       {loading ? (
         <p>Loading...</p>
       ) : readNotifications.length === 0 ? (
-        <p>No read notifications.</p>
+        <p>Aucune notification pour l'instant !!!</p>
       ) : (
         <>
           <ul className={showAll ? 'full-list' : 'limited-list'}>

@@ -34,8 +34,6 @@ const Dashboard = () => {
       <div className="dashboard-main">
         <Header />
         <div className="dashboard-content">
-          <h1>Bienvenue sur le Dashboard</h1>
-
           {/* count  */}
           <div className="dashboard-count">
           <div className="card">
