@@ -20,7 +20,7 @@ function CardWorksManage() {
                     </p>
                 </div>
             </div>
-            <div class="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
+            <div className="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
         </div>
         <div
         className="relative h-28 bg-no-repeat bg-cover bg-center -z-50 rounded-3xl"
@@ -36,7 +36,7 @@ function CardWorksManage() {
                     </p>
                 </div>
             </div>
-            <div class="absolute -bottom-3 -left-3 w-0 h-0 border-t-[150px] border-t-transparent border-l-[150px] border-l-[#fcd019]/60 rounded-3xl"></div>
+            <div className="absolute -bottom-3 -left-3 w-0 h-0 border-t-[150px] border-t-transparent border-l-[150px] border-l-[#fcd019]/60 rounded-3xl"></div>
         </div>
         <div
         className="relative h-28 bg-no-repeat bg-cover bg-center -z-50 rounded-3xl"
@@ -52,7 +52,7 @@ function CardWorksManage() {
                     </p>
                 </div>
             </div>
-            <div class="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
+            <div className="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
         </div>
     </div>
   );

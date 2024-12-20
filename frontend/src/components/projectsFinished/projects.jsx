@@ -42,7 +42,7 @@ function Projects() {
                     Voici quelques-uns de nos <br /> projets réalisés
                 </h1>
             </div>
-            <div class="hidden md:flex absolute bottom-20 left-12 w-0 h-0 border-t-[150px] border-t-transparent border-l-[190px] border-l-[#fcd019] rounded-3xl"></div>
+            <div className="hidden md:flex absolute bottom-20 left-12 w-0 h-0 border-t-[150px] border-t-transparent border-l-[190px] border-l-[#fcd019] rounded-3xl"></div>
         </div>
         <Splide
             hasTrack={false}

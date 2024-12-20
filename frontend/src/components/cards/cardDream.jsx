@@ -12,7 +12,7 @@ function Card() {
               backgroundImage: 'url("img/etep/IMG-20241130-WA0116.jpg")',
             }}
           >
-            <div class="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
+            <div className="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
           </div>
 
           <div 
@@ -56,7 +56,7 @@ function Card() {
               backgroundImage: 'url("img/etep/IMG-20241130-WA0257.jpg")',
             }}
           >
-            <div class="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
+            <div className="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
           </div>
         </div>
     </div>
