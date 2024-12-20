@@ -107,18 +107,6 @@ function RegisterForm() {
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="role">Rôle :</label>
-          <input
-            type="text"
-            id="role"
-            name="role"
-            value={formData.role}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
         <button type="submit" className="submit-button" disabled={loading}>
           {loading ? "Chargement..." : "S'inscrire"}
         </button>

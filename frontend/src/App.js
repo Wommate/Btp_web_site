@@ -4,12 +4,12 @@ import React from 'react';
 //import Dashboard from './pages/dashboard/dashboard/dashboard';
 // import BlogForm from './pages/dashboard/blog/blog';
 // import GalleryForm from './pages/dashboard/gallery/gallery';
-//import RegisterForm from './pages/register/register';  
-import LoginForm from './pages/login/login'; 
+import RegisterForm from './pages/register/register';  
+//import LoginForm from './pages/login/login'; 
 
 function App() {
   return (
-    <LoginForm />
+    <RegisterForm />
     // <Router>
     //   <Routes>
         
