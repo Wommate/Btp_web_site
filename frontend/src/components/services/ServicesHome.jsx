@@ -12,18 +12,18 @@ const ServicesHome = () => {
    
     
     return (
-        <div className='md:relative xl:relative flex xl:flex-row flex-col lg:items-start items-center lg:gap-20 md:gap-20 image-contraste-4 w-full md:pb-0 pb-16 my-20'>
-                    <div className='xl:relative w-full text-lg  text-white justify-center md:pt-16 pt-20'>
-                        <div className='xl:absolute flex flex-col  gap-4 z-30 md:pl-16'>
-                            <h1 className="md:text-4xl text-3xl font-bold lg:text-left text-center">
-                                Nous Vous Offrons Des Services Solides<span className="text-[#fcd019]"> </span>
-                            </h1>
-                            <p className='lg:text-left text-center'>
-                                Notre gamme de services de construction intégrés garantit le plus haut degré de qualité, de sécurité, d'efficacité et d'innovation pour votre projet.
-                            </p>
-                        </div>    
-                        <div className='md:absolute left-5 top-8 z-20 bg-[#fcd019] h-64 w-36 rounded-xl xl:block hidden'></div>
-                    </div>
+        <div className='flex xl:flex-row flex-col lg:items-start items-center justify-between 2xl:px-36 px-10 image-contraste-4 w-full md:pb-10 pb-16 my-44'>
+            <div className='xl:relative w-full text-lg  text-white justify-center md:pt-16 pt-20'>
+                <div className='xl:absolute flex flex-col  gap-4 z-30 md:pl-16'>
+                    <h1 className="md:text-4xl text-3xl font-bold lg:text-left text-center">
+                        Nous Vous Offrons Des Services Solides<span className="text-[#fcd019]"> </span>
+                    </h1>
+                    <p className='lg:text-left text-center'>
+                        Notre gamme de services de construction intégrés garantit le plus haut degré de qualité, de sécurité, d'efficacité et d'innovation pour votre projet.
+                    </p>
+                </div>    
+                <div className='md:absolute left-5 top-12 z-20 bg-[#fcd019] h-[260px] w-36 rounded-xl xl:block hidden'></div>
+            </div>
             <Splide 
                 hasTrack={ false } 
                 options={ 
