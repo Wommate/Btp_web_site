@@ -13,10 +13,10 @@ const Footer = () => {
                 <div className='md:w-1/4 w-3/4 md:mx-0 mx-auto flex flex-col gap-2'>
                     <h1 className='text-[#fcd019] font-bold text-4xl text-left mb-3'>ETEP</h1>
                     <p className='text-left text-base'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ratione voluptates veritatis, molestiae magnam porro qui 
-                        consequatur enim officiis dignissimos culpa aliquid sint temporibus, 
-                        exercitationem neque placeat quia eligendi, minus omnis!
+                        ETEP SUARL est une société unipersonnelle à participation publique majoritaire créé en 2017,
+                        le siège se trouve à Kaolack au Sénégal. ETEP SUARL est chargée
+                        de la mise en oeurvre de tous les travaux de construction, de réhabilitation et d'entretien 
+                        de routes, de ponts et autres ouvrages d'art.
                     </p>
                     {/* <div className='flex gap-6 my-10'>
                         <a className='text-xl bg-[#fcd019] hover:bg-[transparent] hover:text-[#fcd019] duration-500 text-black p-1.5 rounded-full' href="#"><FaFacebook /></a>

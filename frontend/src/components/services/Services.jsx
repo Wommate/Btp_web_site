@@ -11,7 +11,7 @@ const Services = () => {
     // console.log(dataServices);
     return (
         <div className='flex flex-col'>
-            <div className=' w-full'>
+            <div className='w-full'>
                 <div className='bg-black/70 w-full h-[500px]'></div>
                 <img src="img/scene-construction.jpg" className='h-[500px] absolute top-0 -z-10 w-full object-cover' alt="FAQ" />
                 <h3 className='relative -top-44 text-center text-white w-full text-4xl font-bold px-6'>Services</h3>
@@ -22,14 +22,14 @@ const Services = () => {
                 <p className='mx-auto my-4 border-2 w-16 border-[#fcd019]'></p> 
             </div>
             <div className='flex flex-col relative md:h-[900px] w-full'>
-                <div className='top-0 z-10 py-10 grid md:grid-cols-4 grid-cols-1 gap-10 md:px-4 px-20 w-full'>
+                <div className='top-0 z-10 py-10 grid md:grid-cols-4 grid-cols-1 gap-10 px-8 w-full'>
                     {datasCart.map((data) => (
                         <Cart 
                             {...data}
                         />
                     ))}
                 </div>
-                <div className='md:absolute md:bottom-32 flex md:flex-row flex-col gap-3 md:justify-between justify-center bg-black/70 w-full md:mb-0 -mt-[130px] px-4 md:pb-16 pb-12 pt-36  bg_section_contact_service'>
+                <div className='md:absolute md:bottom-32 flex md:flex-row flex-col gap-3 md:justify-between justify-center bg-black/70 w-full md:mb-0 mb-28 -mt-[130px] px-4 md:pb-16 pb-12 pt-36 bg_section_contact_service'>
                     <div className='flex md:flex-row flex-col gap-4 px-10'>
                         <MdOutlineMessage className='md:text-7xl text-8xl bg-[#fcd019] mx-auto text-black md:p-2 p-3 my-3 rounded-xl' />
                         <div className='flex flex-col md:gap-2 gap-4 text-white'>

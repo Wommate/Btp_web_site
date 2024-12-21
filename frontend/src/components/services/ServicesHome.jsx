@@ -12,7 +12,7 @@ const ServicesHome = () => {
    
     
     return (
-        <div className='flex xl:flex-row flex-col lg:items-start items-center justify-between 2xl:px-36 px-10 image-contraste-4 w-full md:pb-10 pb-16 my-44'>
+        <div className='flex xl:flex-row flex-col lg:items-start items-center justify-between 2xl:px-36 px-10 py-16 image-contraste-4 w-full my-44'>
             <div className='xl:relative w-full text-lg  text-white justify-center md:pt-16 pt-20'>
                 <div className='xl:absolute flex flex-col  gap-4 z-30 md:pl-16'>
                     <h1 className="md:text-4xl text-3xl font-bold lg:text-left text-center">
@@ -41,9 +41,10 @@ const ServicesHome = () => {
                         height: 350,
                       },
                       480: { 
+                        gap: 6,
                         perPage: 1,
-                        width : 380,
-                        height: 300,
+                        width : 320,
+                        height: 350,
                       },
                     }
                 } 
@@ -51,7 +52,7 @@ const ServicesHome = () => {
                 aria-label="My Services"
                 >
     
-                <SplideTrack className='lg:ml-12 md:ml-16 ml-14 mx-auto'>
+                <SplideTrack className='lg:ml-12 md:ml-16 ml-7 mx-auto'>
                     {datasCartHome.map(( data, index ) => ( 
                     <SplideSlide key={index}>
                             <CartServiceHome 
