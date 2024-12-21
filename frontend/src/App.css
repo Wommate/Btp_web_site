@@ -1,3 +1,6 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+
 .App {
   text-align: center;
 }
@@ -37,4 +40,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
 

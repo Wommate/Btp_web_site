@@ -16,7 +16,6 @@ code {
     monospace;
 }
 
-/*Section Hero_section: style background-image*/
 .back {
   width: 100%;
   height: 710px;
@@ -25,6 +24,9 @@ code {
   background-size: cover;
   background-position: top;
 }
+<<<<<<< HEAD
+
+=======
 /*Page Home Section Gallery: style splide__row  */
 .splide__arrows .splide__arrow {
   background-color: #fcd019;
@@ -46,6 +48,7 @@ code {
 .splide__arrows .splide__arrow .react_row{
   font-size: smaller;
 }
+>>>>>>> f898713fe59674a17d0458896e6dbfac6c32a7ba
 
 /*Page A propos section Header  */
 .backHeader {

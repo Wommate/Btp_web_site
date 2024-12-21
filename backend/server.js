@@ -8,6 +8,9 @@ const contactRoutes = require('./controllers/contact.ctrl');
 const serviceRoutes = require('./controllers/service.ctrl'); 
 const blogRoutes = require('./controllers/blog.ctrl');
 const quoteRoutes = require('./controllers/quote.ctrl');
+const notificationRoutes = require('./controllers/notification.ctrl');
+
+
 
 
 const app = express();
@@ -23,6 +26,7 @@ app.use('/api/contacts', contactRoutes);
 app.use('/api/services', serviceRoutes); 
 app.use('/api/blogs', blogRoutes);
 app.use('/api/devis', quoteRoutes);
+app.use('/api/notifications', notificationRoutes);
 
 const PORT = process.env.PORT || 4000;
 
