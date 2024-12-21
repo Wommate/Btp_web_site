@@ -18,7 +18,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/faq" element={<Faq />} />
       <Route path="/allGallery" element={<AllGallery />} />
-    </Routes>
+    </Routes>   
   );
 }
 
