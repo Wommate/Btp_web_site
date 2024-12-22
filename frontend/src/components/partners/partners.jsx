@@ -28,7 +28,6 @@ function Partners() {
             autoScroll: {
                 speed: 5, // Vitesse du défilement (ajustez selon vos besoins)
                 pauseOnHover: true,
-                pauseOnHover: true,
               },
             breakpoints: {
               1024: { 

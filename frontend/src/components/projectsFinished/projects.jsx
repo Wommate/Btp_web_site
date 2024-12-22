@@ -71,7 +71,6 @@ function Projects() {
                 },
                 480: {
                 perPage: 1.3,
-                perPage: 1.3,
                 gap: "0.3rem",
                 width: 600,
                 height: 400,

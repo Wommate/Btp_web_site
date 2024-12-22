@@ -1,5 +1,6 @@
 import React from "react";
-import Hero_section from "../components/hero_section/hero_section";
+// import Hero_section from "../components/hero_section/hero_section";
+import HeroSection from "../components/hero_section/hero_section";
 import Contact from "../components/contact/Contact";
 import Gallery from "../components/gallery/gallery";
 import ServicesHome from "../components/services/ServicesHome";
@@ -11,7 +12,7 @@ import Projects from "../components/projectsFinished/projects";
 function Home() {
   return (
     <div>
-      <Hero_section />
+      <HeroSection />
       <Dream />
       <ServicesHome />
       <WorksManage />
