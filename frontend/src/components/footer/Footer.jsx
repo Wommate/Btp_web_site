@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className='flex flex-col'>
             <div className='flex md:flex-row flex-col md:justify-around justify-center gap-3 p-4 pt-10 bg-[#282c34] text-white'>
-                <div className='md:w-1/4 w-3/4 md:mx-0 mx-auto flex flex-col gap-2'>
+                <div className='md:w-1/4 w-3/4 md:mx-0 mx-auto flex flex-col gap-2' data-aos="fade-right" data-aos-duration="1000">
                     <h1 className='text-[#fcd019] font-bold text-4xl text-left mb-3'>ETEP</h1>
                     <p className='text-left text-base'>
                         ETEP SUARL est une société unipersonnelle à participation publique majoritaire créé en 2017,
@@ -24,7 +24,7 @@ const Footer = () => {
                         <a className='text-xl bg-[#fcd019] hover:bg-transparent hover:text-[#fcd019] duration-500 text-black p-1.5 rounded-full' href="#"><FaTiktok /></a>
                     </div> */}
                 </div>
-                <div className='md:w-1/4 w-3/4 md:mx-0 mx-auto flex flex-col gap-3 text-left'>
+                <div className='md:w-1/4 w-3/4 md:mx-0 mx-auto flex flex-col gap-2 text-left' data-aos="fade-up" data-aos-duration="1000">
                     <h3 className='text-xl font-bold text-[#fcd019] mb-4'>Quick link</h3>
                     <ul className='flex flex-col md:justify-start justify-center gap-4'>
                         <li className='flex gap-2'>
@@ -50,7 +50,7 @@ const Footer = () => {
                        
                     </ul>
                 </div>
-                <div className='md:w-1/4 w-3/4 flex flex-col gap-4 md:mx-0 mx-auto text-left'>
+                <div className='md:w-1/4 w-3/4 flex flex-col gap-4 md:mx-0 mx-auto text-left' data-aos="fade-left" data-aos-duration="1000">
                     <h3 className='text-xl  font-bold text-[#fcd019] mb-4'>Contact</h3>
                     <div className='flex gap-2'>
                         <BsTelephoneFill className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />

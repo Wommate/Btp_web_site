@@ -5,7 +5,7 @@ import { MdOutlineMessage } from 'react-icons/md';
 const AsideFAQ = () => {
     return (
         <div className='flex flex-col p-3 md:w-1/3 md:my-0 my-8'>
-            <aside className='bg-[#282c34] rounded-xl p-2 pt-8'>
+            <aside className='bg-[#282c34] rounded-xl p-2 pt-8' data-aos="fade-up" data-aos-duration="1500">
                 <div className='px-5 w-full flex flex-col gap-10'>
                     {/* <div className='flex flex-col gap-3 p-6 rounded-2xl w-full'>
                         <img src={ImgFaq} className='rounded-lg contrast-125' alt="ETEP" />
