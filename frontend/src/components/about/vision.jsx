@@ -1,12 +1,14 @@
 import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Vision() {
   return (
     <div className="mb-20 md:flex">
-      <div className="md:w-1/2 px-10">
+      <div className="md:w-1/2 px-10" data-aos="fade-right">
         <img src="img/engin.jpg" alt="Engin" className="w-full h-96 rounded-xl" />
       </div>
-      <div className="md:w-1/2 p-10">
+      <div className="md:w-1/2 p-10" data-aos="fade-left">
         <h2 className="text-4xl font-bold mb-5">
             Vision
         </h2>

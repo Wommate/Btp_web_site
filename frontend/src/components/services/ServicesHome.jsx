@@ -12,7 +12,7 @@ const ServicesHome = () => {
    
     
     return (
-        <div className='md:relative xl:relative flex xl:flex-row flex-col lg:items-start items-center lg:gap-20 md:gap-20 image-contraste-4 w-full md:pb-0 pb-16 my-20'>
+        <div className='md:relative xl:relative flex xl:flex-row flex-col lg:items-start items-center lg:gap-20 md:gap-20 image-contraste-4 w-full md:pb-0 pb-16 mb-20 '>
                     <div className='xl:relative w-full text-lg  text-white justify-center md:pt-16 pt-20'>
                         <div className='xl:absolute flex flex-col  gap-4 z-30 md:pl-16'>
                             <h1 className="md:text-4xl text-3xl font-bold lg:text-left text-center">
