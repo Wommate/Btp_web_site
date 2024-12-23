@@ -4,6 +4,9 @@ import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Projects() {
   const [selectedImage, setSelectedImage] = useState(null); // Image sélectionnée
@@ -38,11 +41,11 @@ function Projects() {
             backgroundImage: 'url("imgconstruction-silhouette.jpg")',
         }}>
             <div className="absolute inset-0 flex items-center md:pl-24 bg-[#fcd019]/30 text-4xl font-bold ">
-                <h1 className="z-10 text-left px-5 md:p-0">
+                <h1 className="z-10 text-left px-5 md:p-0" data-aos="zoom-out-up" data-aos-duration="3000">
                     Voici quelques-uns de nos <br /> projets réalisés
                 </h1>
             </div>
-            <div className="hidden md:flex absolute bottom-20 left-12 w-0 h-0 border-t-[150px] border-t-transparent border-l-[190px] border-l-[#fcd019] rounded-3xl"></div>
+            <div className="hidden md:flex absolute bottom-20 left-12 w-0 h-0 border-t-[150px] border-t-transparent border-l-[190px] border-l-[#fcd019] rounded-3xl" data-aos="fade-right"></div>
         </div>
         <Splide
             hasTrack={false}
@@ -52,10 +55,9 @@ function Projects() {
             height: 400,
             gap: "2rem",
             perPage: 4,
-            perMove: 4,
             type: 'loop',
-            autoplay: false,
-            interval: 3000,
+            autoplay: true,
+            interval: 10000,
             breakpoints: {
                 1024: {
                 perPage: 3,
@@ -70,15 +72,15 @@ function Projects() {
                 height: 400,
                 },
                 480: {
-                perPage: 1.3,
-                perPage: 1.3,
+                perPage: 1,
+                perPage: 1,
                 gap: "0.3rem",
                 width: 600,
                 height: 400,
                 },
                 320: {
-                perPage: 1.2,
-                perMove: 1.2,
+                perPage: 1,
+                perMove: 1,
                 gap: "0.2rem",
                 width: 600,
                 height: 400,
@@ -88,9 +90,9 @@ function Projects() {
             className="mx-auto -mt-10"
             aria-label="Mes images préférées"
         >
-            <SplideTrack>
+            <SplideTrack data-aos="fade-left">
             {images.map((image, index) => (
-                <SplideSlide key={index}>
+                <SplideSlide key={index} className="flex justify-center">
                 <img
                     src={image}
                     alt={`Image ${index + 1}`}
@@ -101,7 +103,7 @@ function Projects() {
             ))}
             </SplideTrack>
 
-            <div className="splide__arrows absolute right-28 md:-top-16 md:-right-4 w-28">
+            <div className="splide__arrows absolute  md:-top-16 md:-right-4 w-full md:w-28">
             <button className="splide__arrow splide__arrow--prev projects-prev">
                 <BiSolidLeftArrow className="react_row" />
             </button>

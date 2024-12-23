@@ -6,6 +6,9 @@ import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Gallery() {
   // État pour le modal
   const [selectedImage, setSelectedImage] = useState(null); // Image sélectionnée
@@ -37,13 +40,13 @@ function Gallery() {
   };
 
   return (
-    <div className='mb-10'>
-      <h1 className='text-4xl font-bold text-center mb-5'>Gallery</h1>
+    <div className='pt-10 pb-10 bg-gray-100'>
+      <h1 className='text-4xl font-bold text-center mb-10' data-aos="fade-down">Gallery</h1>
       <Splide 
         hasTrack={ false } 
         options={ 
           {
-            rewind: true, width : 900, height : 150, gap : '1rem', perPage: 4, autoplay: true, interval: 30000, 
+            rewind: true, width : 1100, height : 200, gap : '1rem', perPage: 4, autoplay: true, interval: 10000, 
             breakpoints: {
               1024: { 
                 perPage: 3,
@@ -67,6 +70,7 @@ function Gallery() {
           } 
         } 
         className="mx-auto" aria-label="Mes images préférées"
+        data-aos="zoom-in-up"
       >
         <SplideTrack>
           {images.map((image, index) => (
@@ -74,8 +78,8 @@ function Gallery() {
                 <img
                   src={image}
                   alt={`Image ${index + 1}`}
-                  onClick={() => handleImageClick(image)} // Clique pour ouvrir l'image
-                  style={{ cursor: 'pointer' }} // Indique que c'est cliquable
+                  onClick={() => handleImageClick(image)} 
+                  style={{ cursor: 'pointer', width:'900px' ,height:'200px'}} 
                 />
               </SplideSlide>
           ))}

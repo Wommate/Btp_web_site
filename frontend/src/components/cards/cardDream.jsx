@@ -1,16 +1,26 @@
 import React from 'react'
 import { GrUserWorker } from "react-icons/gr";
 import { TbCircleDashedCheck } from "react-icons/tb";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Card() {
+  useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+        once: false, 
+      });
+    }, []);
   return (
     <div className='flex gap-5'>
-        <div className='w-1/2 flex flex-col gap-7'>
+        <div className='w-1/2 z-10 flex flex-col gap-7'>
           <div 
             className="w-full relative h-96 bg-no-repeat bg-cover bg-center -z-50 rounded-3xl"
             style={{
               backgroundImage: 'url("img/etep/IMG-20241130-WA0116.jpg")',
             }}
+            data-aos="fade-down"
           >
             <div className="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
           </div>
@@ -20,6 +30,7 @@ function Card() {
             style={{
               backgroundImage: 'url("img/etep/IMG-20241130-WA0230.jpg")',
             }}
+            data-aos="fade-right"
           >
             <div className="absolute inset-0 bg-black bg-opacity-70 flex justify-center rounded-3xl">           
                 <div className="flex flex-col justify-center md:flex-row md:justify-start items-center gap-2 text-[#fcd019] max-w-2xl">
@@ -33,12 +44,13 @@ function Card() {
           </div>
         </div>
 
-        <div className='w-1/2 flex flex-col gap-7'>
+        <div className='w-1/2 z-10 flex flex-col gap-7'>
             <div 
               className="relative h-32 bg-no-repeat bg-cover bg-center -z-50 rounded-3xl"
               style={{
                 backgroundImage: 'url("img/etep/IMG-20241130-WA0234.jpg")',
               }}
+              data-aos="fade-left"
             >
               <div className="absolute inset-0 bg-black bg-opacity-70 flex justify-center rounded-3xl">           
                   <div className="flex flex-col justify-center md:flex-row md:justify-start items-center gap-2 text-[#fcd019] max-w-2xl">
@@ -55,6 +67,7 @@ function Card() {
             style={{
               backgroundImage: 'url("img/etep/IMG-20241130-WA0257.jpg")',
             }}
+            data-aos="fade-up"
           >
             <div className="absolute -bottom-3 -right-3 w-0 h-0 border-t-[150px] border-t-transparent border-r-[150px] border-r-[#fcd019]/60 rounded-3xl"></div>
           </div>
