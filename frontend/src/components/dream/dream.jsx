@@ -5,7 +5,7 @@ import Card from "../cards/cardDream";
 
 function Dream() {
   return (
-    <div className="flex flex-col items-center md:flex-row mt-12 h-full px-5 md:px-14 gap-10 md:gap-3">
+    <div className="bg-gray-100 flex flex-col items-center md:flex-row h-full px-5 pt-5 pb-10 md:pb-20 md:pt-14 md:px-14 gap-10 md:gap-3">
         <div className="md:w-1/2 h-full flex flex-col gap-6 text-lg">
             <h1 className="text-4xl font-bold">
                 Nous Construisons Tout<br></br> Selon Vos <span className="text-[#fcd019]">Rêves</span>
@@ -30,7 +30,7 @@ function Dream() {
                 <p className="flex items-center gap-2"><IoMdCheckmarkCircleOutline className="text-[#fcd019] text-xl" />Matériaux de construction robustes</p>
                 <p className="flex items-center gap-2"><IoMdCheckmarkCircleOutline className="text-[#fcd019] text-xl" />Matériaux de construction respectueux de l'environnement</p>
             </div>
-            <Link to="/about" className="sm:w-1/3 md:w-2/3 lg:w-1/2 py-3 rounded-lg bg-[#fcd019] text-white text-center font-semibold">Découvrez nous</Link>
+            <Link to="/about" className="sm:w-1/3 md:w-2/3 lg:w-1/2 py-3 rounded-lg bg-[#fcd019] text-white text-center font-semibold shadow-md shadow-black/30 hover:bg-[#e4b808]">Découvrez nous</Link>
         </div>
         <div className="w-full md:w-1/2">
             <Card />

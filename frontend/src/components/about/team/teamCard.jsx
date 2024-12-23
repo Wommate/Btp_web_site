@@ -6,10 +6,12 @@ function TeamCard({ name, role, image }) {
       <img
         src={image}
         alt={name}
-        className="w-48 h-48 object-cover rounded-full mb-4 shadow-lg"
+        className="w-48 h-48 object-cover rounded-lg mb-4 shadow-lg"
+        data-aos="fade-up"
+        data-aos-duration="2500"
       />
-      <h3 className="text-xl font-bold text-gray-800">{name}</h3>
-      <p className="text-gray-600">{role}</p>
+      <h3 className="text-xl font-bold" data-aos="zoom-in" data-aos-duration="3000">{name}</h3>
+      <p data-aos="zoom-in" data-aos-duration="3000">{role}</p>
     </div>
   )
 }

@@ -15,19 +15,19 @@ function navbar_sup() {
             <li className='flex items-center gap-2'>
               <LuContact className='text-3xl' />
               <div className='flex flex-col text-sm'>
-                Telephone <span className='text-white font-normal text-xs'>(+221) 00 000 00 00</span>
+                Telephone <span className='text-white font-normal text-xs'>+221 33 945 22 57 / 77 638 31 06</span>
               </div>
             </li>
             <li className='flex items-center gap-2'>
-              <TbMail className='text-3xl' />
+               <TbMail className='text-3xl' />
               <div className='flex flex-col text-sm'>
-                Email <span className='text-white font-normal text-xs'>email@gmail.com</span>
+                Email <span className='text-white font-normal text-xs'>etepbarasecksuarl@gmail.com</span>
               </div>
             </li>
             <li className='flex items-center gap-2'>
               <GrMapLocation className='text-3xl' />
               <div className='flex flex-col text-sm'>
-                Adresse <span className='text-white font-normal text-xs'>localisation</span>
+                Adresse <span className='text-white font-normal text-xs'>Quartier Ngane lot 40 Kaolack</span>
               </div>
             </li>
         </ul>

@@ -1,10 +1,18 @@
 import React from "react";
 import CardWorksManage from "../cards/cardWorksManage";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function WorksManage() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Durée de l'animation
+          once: true, // Animation jouée une seule fois
+        });
+      }, []);
   return (
     <div className="relative">
-        {/* <div className="absolute right-0 top-0 bg-[#35c6f4]/70 rounded w-96 h-96"></div> */}
         <div className="flex flex-col items-center md:flex-row h-full mt-10 px-5 md:px-14 gap-10 md:gap-5">
             <div className="md:w-1/2 h-full flex flex-col gap-6 text-lg">
                 <h1 className="text-4xl font-bold">
@@ -26,8 +34,11 @@ function WorksManage() {
                     style={{
                     backgroundImage: 'url("img/etep/IMG-20241130-WA0139.jpg")',
                     }}
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
                 >
-                    <div class="absolute -bottom-3 -left-3 w-0 h-0 border-t-[150px] border-t-transparent border-l-[150px] border-l-[#fcd019]/60 rounded-3xl"></div>
+                    <div className="absolute -bottom-3 -left-3 w-0 h-0 border-t-[150px] border-t-transparent border-l-[150px] border-l-[#fcd019]/60 rounded-3xl"></div>
                 </div>
             </div>
         </div>

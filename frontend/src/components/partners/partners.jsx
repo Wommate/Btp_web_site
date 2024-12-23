@@ -19,14 +19,13 @@ function Partners() {
 
   return (
     <div className=''>
-      {/* <h1 className='text-4xl font-bold text-center mb-5'>Gallery</h1> */}
       <Splide 
         hasTrack={ false } 
         options={ 
           {
             rewind: false, pagination: false, width : 1500, height : 90, gap : '1rem', perPage: 8, perMove: 1, autoplay: true, interval: 2000, type: 'loop', speed:3000, extensions: { AutoScroll },
             autoScroll: {
-                speed: 5, // Vitesse du défilement (ajustez selon vos besoins)
+                speed: 5, 
                 pauseOnHover: true,
                 pauseOnHover: true,
               },
@@ -54,7 +53,7 @@ function Partners() {
         } 
         className="mx-auto" aria-label="Mes images préférées"
       >
-        <SplideTrack className="bg-gray-50">
+        <SplideTrack className="bg-gray-100">
           {images.map((image, index) => (
                 <SplideSlide key={index} className="flex justify-center items-center gap-1">
                     <img

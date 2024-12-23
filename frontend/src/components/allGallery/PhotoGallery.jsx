@@ -75,15 +75,14 @@ function PhotoGallery() {
   };
 
   return (
-    <div className="container mx-auto px-4 ">
-      {/* <h1 className="text-3xl font-bold text-center mb-8">Galerie Photo</h1> */}
-      
+    <div className="container mx-auto px-4 ">    
       <div className="grid grid-cols-1 pt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-7 gap-4">
         {images.map((image) => (
           <div 
             key={image.id}
             className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg"
             onClick={() => openModal(image)}
+            data-aos="fade-up-left"
           >
             <img
               src={image.url}

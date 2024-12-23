@@ -10,7 +10,7 @@ const Cart = ({id, title, photo, description}) => {
                     {description}   
                 </p>
             </div>
-            <div class="absolute -top-2 -right-2 w-0 h-0 border-l-[150px] border-l-transparent border-t-[150px] border-t-[#fcd019]/60 rounded-3xl"></div>
+            <div className="absolute -top-2 -right-2 w-0 h-0 border-l-[150px] border-l-transparent border-t-[150px] border-t-[#fcd019]/60 rounded-3xl"></div>
         </div>
     );
 }

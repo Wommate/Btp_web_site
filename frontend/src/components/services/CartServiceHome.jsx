@@ -12,7 +12,7 @@ const CartServiceHome = ({id,  title, description}) => {
                     {description}   
                 </p>
             </div>
-            <div class="absolute -top-2 -right-2 w-0 h-0 border-l-[100px] border-l-transparent border-t-[100px] border-t-[#fcd019]/60 rounded-3xl"></div>
+            <div className="absolute -top-2 -right-2 w-0 h-0 border-l-[100px] border-l-transparent border-t-[100px] border-t-[#fcd019]/60 rounded-3xl"></div>
         </div>
     );
 }
