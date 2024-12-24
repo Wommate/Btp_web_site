@@ -67,6 +67,12 @@
   box-shadow: 0 4px 6px rgba(112, 84, 84, 0.1);
 }
 
+.active {
+  color: #E42593; 
+  font-weight: bold;
+}
+
+
 /* separation btn deconnexion */
 .separator {
   border: 0.2px solid red;

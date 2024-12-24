@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./sidebar.css";
 import { FaBlog, FaPhotoVideo, FaUserPlus, FaSignOutAlt } from "react-icons/fa";
 
@@ -11,31 +11,37 @@ const Sidebar = () => {
       </div>
       <ul>
         <li>
-          <Link to="/dashboard/blog">
+          <NavLink to="/dashboard/blog" activeClassName="active">
             <FaBlog className="icon" />
             <span>Ajouter Blog</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/dashboard/gallery">
+          <NavLink to="/dashboard/gallery" activeClassName="active">
             <FaPhotoVideo className="icon" />
             <span>Ajouter Gallery</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/dashboard/register">
+          <NavLink to="/dashboard/register" activeClassName="active">
             <FaUserPlus className="icon" />
             <span>Ajouter utilisateur</span>
-          </Link>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/dashboard/profil" activeClassName="active">
+            <FaUserPlus className="icon" />
+            <span>Modifier Profil</span>
+          </NavLink>
         </li>
       </ul>
       <hr className="separator" />
       <ul>
         <li>
-          <Link to="/logout" className="logout">
+          <NavLink to="/logout" className="logout" activeClassName="active">
             <FaSignOutAlt className="icon" />
             <span>Déconnexion</span>
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </div>

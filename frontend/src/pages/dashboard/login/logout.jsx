@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "./login.css";
 
 const Logout = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Logout = () => {
   }, [navigate]);
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div style={{ textAlign: "center", marginTop: "50px" }} id="notfound">
       <h2>Déconnexion en cours...</h2>
       <p>Vous allez être redirigé vers la page de connexion.</p>
     </div>
