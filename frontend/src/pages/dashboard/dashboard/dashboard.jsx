@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Outlet } from 'react-router-dom';
 import './dashboard.css';
-// import Navbar from '../../components/navbar/navbar';
 import Sidebar from './sidebar';
 import Rightbar from './rightbar';
 import Header from './header';
-import TabNotification from '../tabNotification/tabNotification';
 
 const Dashboard = () => {
-  // counts
   const [counts, setCounts] = useState({ unread: 0, read: 0 });
 
   useEffect(() => {
@@ -25,40 +23,14 @@ const Dashboard = () => {
     }
   };
 
-  // end
-
-
   return (
     <div className="dashboard-container">
       <Sidebar />
       <div className="dashboard-main">
         <Header />
         <div className="dashboard-content">
-          {/* count  */}
-          <div className="dashboard-count">
-          <div className="card">
-            <h3>Message archive</h3>
-            <p className="counter" data-target="1500">  {counts.total} </p>
-          </div>
-          <div className="card">
-            <h3>Message marquer lu</h3>
-            <p className="counter" data-target="350"> {counts.read} </p>
-          </div>
-          <div className="card">
-            <h3>Message non lu</h3>
-            <p className="counter" data-target="1200"> {counts.unread} </p>
-          </div>
-          {/* <div className="card">
-            <h3>Bénéfices</h3>
-            <p className="counter" data-target="5000"></p>
-          </div> */}
-        </div>
-
-        {/* message contact  */}
-        <div>
-        <TabNotification />
-        </div>
-
+          {/* Outlet rend le contenu dynamique ici */}
+          <Outlet />
         </div>
       </div>
       <Rightbar />

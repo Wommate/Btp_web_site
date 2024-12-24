@@ -3,8 +3,6 @@
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    height: 100vh; 
-    /* background-color: #f9f9f9;  */
     font-family: Arial, sans-serif;
   }
   
@@ -14,11 +12,10 @@
   }
   
   .blog-form {
-    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 80%;
   }
   
   .form-group {
@@ -76,8 +73,7 @@
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
-  height: 100vh; 
-  background-color: #f9f9f9; 
+  height: 80%; 
   font-family: Arial, sans-serif;
 }
 
