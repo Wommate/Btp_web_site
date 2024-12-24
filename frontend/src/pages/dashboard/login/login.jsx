@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./login.css";
 
+
 function LoginForm() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -32,14 +32,19 @@ function LoginForm() {
 
       if (response.status === 200) {
         // Sauvegarder le token JWT dans le localStorage
-        localStorage.setItem("token", response.data.token);
+        const token = response.data.token;
+        localStorage.setItem("token", token);
+
+        // Console log du token
+        console.log("Token JWT reçu :", token);
+
         setSuccessMessage("Connexion réussie !");
         setError(null);
-        setLoginAttempts(0); // Réinitialiser les tentatives en cas de succès
+        setLoginAttempts(0);
 
         // Redirection vers le tableau de bord après un délai
         setTimeout(() => {
-          window.location.pathname = "/Dashbord/Admin";
+          window.location.pathname = "/dashboard";
         }, 2000);
       }
     } catch (err) {
@@ -54,7 +59,7 @@ function LoginForm() {
         setError("Vous n'êtes pas autorisé à accéder à cette page.");
         setTimeout(() => {
           window.location.pathname = "/";
-        }, 3000); // Redirection après 3 secondes
+        }, 3000);
       }
     } finally {
       setLoading(false);

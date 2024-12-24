@@ -1,40 +1,56 @@
 .sidebar {
-    width: 200px;
-    background-color: #35c6f4;
-    color: #fff;
-    padding: 20px;
-    height: 100%;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 20px;
-  }
+  width: 60px; 
+  background-color: #35c6f4;
+  color: #fff;
+  padding: 20px;
+  height: 100%;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: width 0.3s ease;
+  overflow: hidden; 
+  white-space: nowrap; 
+}
 
-  .sidebar:hover {
-    width: 350px;
-  }
-  
-  .sidebar h2 {
-    margin-bottom: 20px;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    margin: 10px 0;
-    cursor: pointer;
-  }
-  
-  .sidebar li:hover {
-    color: #fcd019;
-    font-size: 180%;
-    
-  }
-  
+.sidebar:hover {
+  width: 250px;
+}
 
-  /* Conteneur pour le logo */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.sidebar li .icon {
+  margin-right: 10px;
+  font-size: 20px; 
+}
+
+.sidebar li span {
+  opacity: 0;
+  transition: opacity 0.3s ease, margin-left 0.3s ease;
+  margin-left: -10px; 
+}
+
+.sidebar:hover li span {
+  opacity: 1;
+  margin-left: 10px; 
+}
+
+.sidebar li:hover {
+  color: #fcd019;
+  font-size: 18px; 
+}
+
 .logo-container {
   margin-bottom: 20px;
   display: flex;
@@ -43,11 +59,28 @@
   width: 100%;
 }
 
-/* Style de l'image du logo */
 .logo {
-  width: 100px; 
-  height:  100px; 
+  width: 50px; 
+  height: 50px;
   background-color: #fff;
-  border-radius: 50%; 
-  box-shadow: 0 4px 6px rgba(112, 84, 84, 0.1); 
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(112, 84, 84, 0.1);
+}
+
+/* separation btn deconnexion */
+.separator {
+  border: 0.2px solid red;
+  margin: 20px 0;
+}
+
+/* Bouton de déconnexion */
+.logout {
+  color: #ff0000;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logout:hover {
+  text-decoration: underline;
 }
