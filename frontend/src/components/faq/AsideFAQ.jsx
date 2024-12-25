@@ -38,7 +38,7 @@ const AsideFAQ = () => {
                         <div className='flex flex-col gap-1'>
                             <textarea name="content" id="content" rows="10" className='border rounded-xl p-1 h-44 placeholder:text-lg placeholder:px-2' placeholder='Ecrivez votre message'></textarea>
                         </div>
-                        <input type="submit" value="Demander" className='p-3 rounded-xl bg-[#fcd019] text-black text-sm mt-3 font-bold md:w-1/3 w-1/2 hover:shadow hover:shadow-[#35c6f4] duration-500' />
+                        <input type="submit" value="Demander" className='p-3 rounded-xl bg-[#fcd019] text-black text-sm mt-3 font-bold w-1/2 hover:shadow hover:shadow-[#35c6f4] duration-500' />
                     </form>
                 </div>
             </aside>

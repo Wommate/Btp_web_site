@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className='flex flex-col'>
-            <div className='flex md:flex-row flex-col md:justify-around justify-center gap-3 p-4 pt-10 bg-[#282c34] text-white'>
+            <div className='flex md:flex-row flex-col md:justify-around justify-center gap-3 md:pl-0 p-4 pt-10 bg-[#282c34] text-white'>
                 <div className='md:w-1/4 w-3/4 md:mx-0 mx-auto flex flex-col gap-2' data-aos="fade-right" data-aos-duration="1000">
                     <h1 className='text-[#fcd019] font-bold text-4xl text-left mb-3'>ETEP</h1>
                     <p className='text-left text-base'>
@@ -55,7 +55,6 @@ const Footer = () => {
                     <div className='flex gap-2'>
                         <BsTelephoneFill className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />
                         <p className='text-base'>33 945 22 57 / +221 77 638 31 06</p>
-                        {/* <p className='text-base'>+221 77 638 31 06</p> */}
                         {/* <p className='text-base'>77 544 19 48</p> */}
                     </div>
                     <div className='flex gap-2'>
@@ -64,7 +63,7 @@ const Footer = () => {
                     </div>
                     <div className='flex gap-2'>
                         <MdEmail className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />
-                        <a href="mailto:etepbaraseck@gmail.com" className='hover:text-[#fcd019] duration-500'>etepbaraseck@gmail.com</a>
+                        <a href="mailto:etepbaraseck@gmail.com" className='hover:text-[#fcd019] md:text-sm duration-500'>etepbaraseck@gmail.com</a>
                         {/* <a href="mailto:contact@etepbaraseck.com" className='hover:text-[#fcd019] duration-500'>contact@etepbaraseck.com</a> */}
                     </div>
                     

@@ -49,7 +49,7 @@ const Contact = () => {
                             
                 </div>
                 <div className='md:w-1/2 w-full py-6 mt-20 md:rounded-r-xl md:rounded-bl-none rounded-b-xl'>
-                    <h2 className='font-bold md:text-4xl text-2xl text-black mb-8 border-b-2 border-[#fcd019] pb-2'>Ou via le formulaire</h2>
+                    <h2 className='font-bold md:text-4xl text-2xl text-black mb-8 border-b-2 border-[#fcd019] pb-2' data-aos="zoom-out" data-aos-duration="1500">Ou via le formulaire</h2>
                     <form action="#" method="post" className='flex flex-col gap-5 justify-center'>
                         <div className="flex flex-row gap-3 w-full">
                             <input className='border rounded-xl p-1 px-2 placeholder:text-lg placeholder:px-2 w-1/2' type="text" name="name" id="name" placeholder='Nom' data-aos="fade-right" data-aos-duration="1500" />
