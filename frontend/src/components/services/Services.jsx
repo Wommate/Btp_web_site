@@ -1,7 +1,6 @@
 import React from 'react';
-import { datasCart,dataServices } from '../../data/data';
+import { datasCart } from '../../data/data';
 import Cart from './cart';
-import CartService from './cartService';
 import { MdOutlineMessage } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { IoIosArrowRoundForward } from 'react-icons/io';
@@ -42,13 +41,7 @@ const Services = () => {
                     </Link>
                 </div>
             </div>
-            {/* <div className='flex flex-col gap-8'>
-                {dataServices.map((dataService) => (
-                   <CartService
-                        {...dataService} 
-                   />
-                ))}
-            </div> */}
+            
         </div>
     );
 }
