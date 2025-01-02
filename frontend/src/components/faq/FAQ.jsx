@@ -46,14 +46,14 @@ const FAQ = () => {
     
     return (
         <div className='flex flex-col'>
-            <div className=' w-full'>
+            <div className='w-full' data-aos="fade-down" data-aos-duration="1500">
                 <div className='bg-black/70 w-full h-[500px]'></div>
                 <img src="img/construction-silhouette.jpg" className='h-[500px] absolute top-0 -z-10 w-full object-cover' alt="FAQ" />
-                <h3 className='relative -top-44 text-center text-white w-full text-4xl font-bold px-6'>Frequently Asked Questions</h3>
+                <h3 className='relative -top-44 text-center text-white w-full text-4xl font-bold px-6' data-aos="zoom-in" data-aos-duration="1800">Frequently Asked Questions</h3>
             </div>
-            <div className='flex md:flex-row flex-col-reverse gap-4'>
+            <div className='flex md:flex-row flex-col-reverse gap-4 my-16'>
                 <AsideFAQ />
-                <div className='md:w-2/3 w-full'>
+                <div className='md:w-2/3 w-full' data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                     <div className='md:px-3 px-7 flex flex-col gap-4 py-4'>
                         <p className='text-left text-lg text-gray-600 font-medium'>Questions fréquemment posées</p>
                         <h1 className='md:text-4xl text-[28px] font-bold text-left'>Avez vous des <span className='text-[#35c6f4]'>questions ?</span></h1>

@@ -16,7 +16,7 @@ function Home() {
       <ServicesHome />
       <WorksManage />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
       <Gallery />
       <Partners />
     </div>

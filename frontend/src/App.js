@@ -7,8 +7,14 @@ import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Faq from "./pages/faq";
 import AllGallery from "./pages/allGallery";
+import { useEffect } from "react";
+import Aos from "aos";
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />
