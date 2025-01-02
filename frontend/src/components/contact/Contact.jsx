@@ -65,7 +65,7 @@ const Contact = () => {
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1934.087769471426!2d-16.073786!3d14.1844947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xee995beef7bf4bb%3A0xa6109d942d0a4acb!2sETEP%20BARA%20SECK%20SUARL!5e0!3m2!1sfr!2ssn!4v1734905652098!5m2!1sfr!2ssn" 
                 width="100%" 
                 height="600" 
-                className='mb-24'
+                className=''
                 // style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
