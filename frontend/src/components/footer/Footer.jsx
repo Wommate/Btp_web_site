@@ -1,6 +1,5 @@
 import React from 'react';
-import { BsInstagram, BsTelephoneFill } from 'react-icons/bs';
-import { FaFacebook, FaTiktok } from 'react-icons/fa6';
+import { BsTelephoneFill } from 'react-icons/bs';
 import { GiPositionMarker } from 'react-icons/gi';
 import { GoTriangleRight } from 'react-icons/go';
 import { MdEmail } from 'react-icons/md';
@@ -59,7 +58,7 @@ const Footer = () => {
                     </div>
                     <div className='flex gap-2'>
                         <GiPositionMarker className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />
-                        <a href='https://maps.app.goo.gl/pJuE5xG7GgoVAhFF9' target='_blank' className='hover:text-[#fcd019] duration-500'>Quartier Ngane - lot 40 Kaolack</a>
+                        <a href='https://maps.app.goo.gl/pJuE5xG7GgoVAhFF9' target='_blank' rel="noreferrer" className='hover:text-[#fcd019] duration-500'>Quartier Ngane - lot 40 Kaolack</a>
                     </div>
                     <div className='flex gap-2'>
                         <MdEmail className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />
@@ -70,7 +69,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='bg-black text-white md:text-base text-sm flex py-6 px-4 justify-center'>
-                <p className='text-center'>© Copyright <strong>ETEP</strong>. Tous droits réservé Designed by <a className='font-bold text-[#fcd019]' target='_blank' href="https://www.wommate.tech/">Wommate Technology</a></p>
+                <p className='text-center'>© Copyright <strong>ETEP</strong>. Tous droits réservé Designed by <a className='font-bold text-[#fcd019]' target='_blank' rel="noreferrer" href="https://www.wommate.tech/">Wommate Technology</a></p>
             </div>
         </div>
     );
