@@ -17,14 +17,9 @@ const Footer = () => {
                         de la mise en oeurvre de tous les travaux de construction, de réhabilitation et d'entretien 
                         de routes, de ponts et autres ouvrages d'art.
                     </p>
-                    {/* <div className='flex gap-6 my-10'>
-                        <a className='text-xl bg-[#fcd019] hover:bg-[transparent] hover:text-[#fcd019] duration-500 text-black p-1.5 rounded-full' href="#"><FaFacebook /></a>
-                        <a className='text-xl bg-[#fcd019] hover:bg-transparent hover:text-[#fcd019] duration-500 text-black p-1.5 rounded-full' href="#"><BsInstagram /></a>
-                        <a className='text-xl bg-[#fcd019] hover:bg-transparent hover:text-[#fcd019] duration-500 text-black p-1.5 rounded-full' href="#"><FaTiktok /></a>
-                    </div> */}
                 </div>
                 <div className='md:w-1/4 w-3/4 md:mx-0 mx-auto flex flex-col gap-2 text-left' data-aos="fade-up" data-aos-duration="1000">
-                    <h3 className='text-xl font-bold text-[#fcd019] mb-4'>Quick link</h3>
+                    <h3 className='text-xl font-bold text-[#fcd019] mb-4'>Liens</h3>
                     <ul className='flex flex-col md:justify-start justify-center gap-4'>
                         <li className='flex gap-2'>
                             <GoTriangleRight className='my-[5px] text-[#fcd019]' />
@@ -40,7 +35,7 @@ const Footer = () => {
                         </li>
                         <li className='flex gap-2'>
                             <GoTriangleRight className='my-[5px] text-[#fcd019]' />
-                            <Link className= "hover:text-[#fcd019] duration-500 text-base" to="/blog">Blog</Link>
+                            <Link className= "hover:text-[#fcd019] duration-500 text-base" to="/faq">FAQ</Link>
                         </li>
                         <li className='flex gap-2'>
                             <GoTriangleRight className='my-[5px] text-[#fcd019]' />
@@ -50,19 +45,26 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='md:w-1/4 w-3/4 flex flex-col gap-4 md:mx-0 mx-auto text-left' data-aos="fade-left" data-aos-duration="1000">
-                    <h3 className='text-xl  font-bold text-[#fcd019] mb-4'>Contact</h3>
+                    <h3 className='text-xl  font-bold text-[#fcd019] mb-4'>Contacts</h3>
                     <div className='flex gap-2'>
-                        <BsTelephoneFill className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />
-                        <p className='text-base'>33 945 22 57 / +221 77 638 31 06</p>
-                        {/* <p className='text-base'>77 544 19 48</p> */}
+                        <BsTelephoneFill className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500 ' />
+                        <a href='tel:+221776383106' className='text-base hover:text-[#fcd019] duration-500'>33 945 22 57 / +221 77 638 31 06</a>
                     </div>
+                    {/* <div className='flex gap-2'>
+                        <BsTelephoneFill className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500 ' />
+                        <a href='tel:+221776383106' className='text-base hover:text-[#fcd019] duration-500'>+221 77 638 31 06</a>
+                    </div>
+                    <div className='flex gap-2'>
+                        <BsTelephoneFill className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500 ' />
+                        <a href='tel:+221775441948' className='text-base hover:text-[#fcd019] duration-500'>+221 77 544 19 48</a>
+                    </div> */}
                     <div className='flex gap-2'>
                         <GiPositionMarker className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />
                         <a href='https://maps.app.goo.gl/pJuE5xG7GgoVAhFF9' target='_blank' rel="noreferrer" className='hover:text-[#fcd019] duration-500'>Quartier Ngane - lot 40 Kaolack</a>
                     </div>
                     <div className='flex gap-2'>
                         <MdEmail className='text-3xl text-black bg-[#fcd019] p-1.5 rounded-full duration-500' />
-                        <a href="mailto:etepbaraseck@gmail.com" className='hover:text-[#fcd019] md:text-sm duration-500'>etepbaraseck@gmail.com</a>
+                        <a href="mailto:etepbaraseck@gmail.com" className='hover:text-[#fcd019] lg:text-base text-sm duration-500'>etepbaraseck@gmail.com</a>
                         {/* <a href="mailto:contact@etepbaraseck.com" className='hover:text-[#fcd019] duration-500'>contact@etepbaraseck.com</a> */}
                     </div>
                     
