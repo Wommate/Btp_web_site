@@ -1,17 +1,8 @@
 import React from 'react';
 import { BiBuildings } from 'react-icons/bi';
-import { MdDesignServices, MdEngineering } from 'react-icons/md'; // Genie civil
-// import { TbBuildings } from 'react-icons/tb';
+
 
 const CartServiceHome = ({id,  title, description}) => {
-    const icons = [
-        // "<BiBuildings className='text-[#fcd019] m-4 text-5xl bg-white rounded-xl p-1' />",
-         'BiBuildings',
-          'MdEngineering',
-        //   "<MdEngineering className='text-[#fcd019] m-4 text-5xl bg-white rounded-xl p-1' />",
-          'MdDesignServices',
-        // "<MdDesignServices className='text-[#fcd019] m-4 text-5xl bg-white rounded-xl p-1' />"
-        ];
 
     return (
         <div className='relative my-14 w-[260px] rounded-xl inset-0 bg-black/60 flex flex-col box_shadow' key={id}>
