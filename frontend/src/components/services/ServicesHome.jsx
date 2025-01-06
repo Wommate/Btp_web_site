@@ -5,9 +5,10 @@ import {  datasCartHome } from '../../data/data';
 import CartServiceHome from './CartServiceHome';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import { BiSolidLeftArrow, BiSolidRightArrow } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const ServicesHome = () => {
-    const dataServicesHome = {...datasCartHome}
+    // const dataServicesHome = {...datasCartHome}
     
    
     
@@ -68,6 +69,8 @@ const ServicesHome = () => {
                     <button className="splide__arrow splide__arrow--next"><BiSolidRightArrow className='react_row' /></button>
                 </div>
             </Splide>
+            <Link className='lg:absolute md:left-[28%] font-semibold xl:bottom-4 lg:bottom-[50%] my-10 bg-white px-6 py-2' to= "/services"  data-aos="zoom-in" data-aos-duration="1500">Voir plus</Link>
+
         </div>
     );
 }

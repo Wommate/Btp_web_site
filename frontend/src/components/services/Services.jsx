@@ -27,7 +27,7 @@ const Services = () => {
                         />
                     ))}
                 </div>
-                <div className='lg:absolute lg:top-[72%] flex md:flex-row flex-col gap-3 bg-black/70 w-full md:mb-0 md:-mt-[190px] -mt-[130px] px-4 md:pb-12 pb-12 pt-40 bg_section_contact_service' data-aos="fade-up" data-aos-duration="1500">
+                <div className='lg:absolute lg:top-[77%] flex md:flex-row flex-col gap-3 bg-black/70 w-full md:mb-0 md:-mt-[190px] -mt-[130px] px-4 md:pb-12 pb-12 pt-40 bg_section_contact_service' data-aos="fade-up" data-aos-duration="1500">
                     <div className='flex md:flex-row flex-col gap-4 px-10' data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                         <MdOutlineMessage className='md:text-7xl text-8xl bg-[#fcd019] mx-auto text-black md:p-2 p-3 my-3 rounded-xl' />
                         <div className='flex flex-col md:gap-2 gap-4 text-white'>
