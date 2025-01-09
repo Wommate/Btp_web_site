@@ -9,6 +9,7 @@ import Faq from "./pages/faq";
 import AllGallery from "./pages/allGallery";
 import { useEffect } from "react";
 import Aos from "aos";
+import ArticleBlog from "./pages/articleBlog";
 
 function App() {
   useEffect(() => {
@@ -21,9 +22,11 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/articleBlog" element={<ArticleBlog />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/faq" element={<Faq />} />
       <Route path="/allGallery" element={<AllGallery />} />
+      <Route path="*" element={<h1 className="text-4xl text-center font-bold my-48"> 404 | Page Non Trouvé</h1>} />
     </Routes>
   );
 }

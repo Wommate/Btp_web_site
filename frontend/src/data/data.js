@@ -124,3 +124,24 @@ export const datasFAQ = [
         question: "Comment puis-je obtenir un devis pour mon projet ?",
     },
 ]
+
+export const datasBlog = [
+    {
+        id: 1,
+        title: "Construction de batiment pendant la saison des pluies",
+        photo: "img/etep/img_blog.jpg",
+        long_description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, debitis est nihil libero qui quae esse ullam consequatur repudiandae dolorum pariatur officia? Tenetur facere voluptatem dicta aspernatur dolor nesciunt quae adipisci, quod laborum voluptates nobis porro blanditiis cupiditate, a neque repellendus sunt aliquid inventore atque eveniet dolorem perferendis fugiat",
+   },
+    {
+        id: 2,
+        title: "Construction de batiment pendant la saison des pluies",
+        photo: "img/etep/img_blog.jpg",
+        long_description: "debitis veritatis iure ut error corrupti fugit hic inventore eius est nihil libero qui quae esse ullam consequatur repudiandae dolorum pariatur officia? Tenetur facere voluptatem dicta aspernatur dolor nesciunt quae adipisci, quod laborum voluptates nobis porro blanditiis cupiditate, a neque repellendus sunt aliquid inventore atque eveniet dolorem perferendis fugiat",
+   },
+    {
+        id: 3,
+        title: "Construction de infrastructure pendant la saison des pluies",
+        photo: "img/etep/img_blog.jpg",
+        long_description: "amet consectetur adipisicing elit. Ipsam, debitis veritatis iure ut error corrupti fugit hic inventore eius est nihil libero qui quae facere voluptatem dicta aspernatur dolor nesciunt quae adipisci, quod laborum voluptates nobis porro blanditiis cupiditate, a neque repellendus sunt aliquid inventore atque eveniet dolorem ",
+   },
+]

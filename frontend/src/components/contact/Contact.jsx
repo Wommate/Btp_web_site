@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { GiPositionMarker } from 'react-icons/gi';
 import { LuMessageSquareText } from 'react-icons/lu';
 import { PiPhoneCall } from 'react-icons/pi';

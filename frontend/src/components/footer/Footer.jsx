@@ -35,6 +35,10 @@ const Footer = () => {
                         </li>
                         <li className='flex gap-2'>
                             <GoTriangleRight className='my-[5px] text-[#fcd019]' />
+                            <Link className= "hover:text-[#fcd019] duration-500 text-base" to="/blog">Blog</Link>
+                        </li>
+                        <li className='flex gap-2'>
+                            <GoTriangleRight className='my-[5px] text-[#fcd019]' />
                             <Link className= "hover:text-[#fcd019] duration-500 text-base" to="/faq">FAQ</Link>
                         </li>
                         <li className='flex gap-2'>
