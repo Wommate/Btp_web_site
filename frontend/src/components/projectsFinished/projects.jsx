@@ -4,8 +4,6 @@ import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
-import { useEffect } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Projects() {
@@ -72,7 +70,6 @@ function Projects() {
                 height: 400,
                 },
                 480: {
-                perPage: 1,
                 perPage: 1,
                 gap: "0.3rem",
                 width: 600,

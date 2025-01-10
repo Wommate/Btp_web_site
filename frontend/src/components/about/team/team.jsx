@@ -1,7 +1,6 @@
 import React from "react";
 import TeamCard from "./teamCard";
 import { teamMembers } from "./teamData";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Team() {

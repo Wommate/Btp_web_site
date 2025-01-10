@@ -6,10 +6,7 @@ import CartServiceHome from './CartServiceHome';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import { BiSolidLeftArrow, BiSolidRightArrow } from 'react-icons/bi';
 
-const ServicesHome = () => {
-    const dataServicesHome = {...datasCartHome}
-    
-   
+const ServicesHome = () => {    
     
     return (
         <div className='md:relative xl:relative flex xl:flex-row flex-col lg:items-start items-center lg:gap-20 md:gap-20 image-contraste-4 w-full md:pb-0 pb-16 mb-20 '>

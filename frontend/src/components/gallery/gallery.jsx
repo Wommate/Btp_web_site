@@ -6,7 +6,6 @@ import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Gallery() {

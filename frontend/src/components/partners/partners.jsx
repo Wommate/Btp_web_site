@@ -27,7 +27,6 @@ function Partners() {
             autoScroll: {
                 speed: 5, 
                 pauseOnHover: true,
-                pauseOnHover: true,
               },
             breakpoints: {
               1024: { 

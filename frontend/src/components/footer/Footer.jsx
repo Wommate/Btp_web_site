@@ -1,6 +1,5 @@
 import React from 'react';
-import { BsInstagram, BsTelephoneFill } from 'react-icons/bs';
-import { FaFacebook, FaTiktok } from 'react-icons/fa6';
+import { BsTelephoneFill } from 'react-icons/bs';
 import { GiPositionMarker } from 'react-icons/gi';
 import { GoTriangleRight } from 'react-icons/go';
 import { MdEmail } from 'react-icons/md';
